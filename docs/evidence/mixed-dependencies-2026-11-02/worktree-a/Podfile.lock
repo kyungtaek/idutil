@@ -1,0 +1,16 @@
+PODS:
+  - PodFeature (1.0.0)
+
+DEPENDENCIES:
+  - PodFeature (from `Dependencies/PodFeature`)
+
+EXTERNAL SOURCES:
+  PodFeature:
+    :path: Dependencies/PodFeature
+
+SPEC CHECKSUMS:
+  PodFeature: fa7a928af63e859bc2fa40ad799f1562e30c8521
+
+PODFILE CHECKSUM: af54dd07b95198436b5ae1dc827c3c8d5fed400f
+
+COCOAPODS: 1.16.2

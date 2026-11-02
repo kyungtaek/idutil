@@ -1,0 +1,112 @@
+{
+  "a": {
+    "artifactsPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/Artifacts",
+    "cacheConnections": {
+      "compilation": {
+        "id": "415ec85dd5ee78b74208aeb2",
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2",
+        "toolchain": {
+          "developerDir": "/Applications/Xcode.app/Contents/Developer",
+          "hostArchitecture": "arm64",
+          "simulatorSDK": "24A430",
+          "version": "Xcode 27.0\nBuild version 27A266a"
+        }
+      },
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "cacheMode": "shared",
+    "clearMCPDefault": "projectPath",
+    "configurationEvidence": "unknown",
+    "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "generation": 1,
+    "mcpSessionDefaults": {
+      "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+      ],
+      "scheme": "MixedCacheProbe",
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace"
+    },
+    "profile": "default",
+    "repositoryId": "3c9c877272833649c3bdafcc",
+    "resourceId": "a670310c90f745fa92deadfa5e3f68b3",
+    "schemaVersion": 1,
+    "sourcePackagesPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+    "usageEvidence": "unknown",
+    "worktreeId": "ddab759c6315afcc9ed715ba",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=YES",
+      "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+    ]
+  },
+  "b": {
+    "artifactsPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/Artifacts",
+    "cacheConnections": {
+      "compilation": {
+        "id": "415ec85dd5ee78b74208aeb2",
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2",
+        "toolchain": {
+          "developerDir": "/Applications/Xcode.app/Contents/Developer",
+          "hostArchitecture": "arm64",
+          "simulatorSDK": "24A430",
+          "version": "Xcode 27.0\nBuild version 27A266a"
+        }
+      },
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "cacheMode": "shared",
+    "clearMCPDefault": "projectPath",
+    "configurationEvidence": "unknown",
+    "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "generation": 1,
+    "mcpSessionDefaults": {
+      "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+      ],
+      "scheme": "MixedCacheProbe",
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace"
+    },
+    "profile": "default",
+    "repositoryId": "3c9c877272833649c3bdafcc",
+    "resourceId": "89f897334c2f408cbaa948a81248850f",
+    "schemaVersion": 1,
+    "sourcePackagesPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+    "usageEvidence": "unknown",
+    "worktreeId": "d603a39665fad4f6d5a0c5be",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=YES",
+      "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+    ]
+  }
+}

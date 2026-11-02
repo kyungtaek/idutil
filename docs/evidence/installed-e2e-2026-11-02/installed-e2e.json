@@ -1,0 +1,971 @@
+{
+  "lab": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547",
+  "startedAt": "2026-11-02T13:55:47+0900",
+  "result": "passed",
+  "commands": [
+    {
+      "label": "idutil-version",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "--version"
+      ],
+      "exitCode": 0,
+      "seconds": 0.041036792
+    },
+    {
+      "label": "worktrunk-version",
+      "argv": [
+        "/opt/homebrew/bin/wt",
+        "--version"
+      ],
+      "exitCode": 0,
+      "seconds": 0.006804708999999992
+    },
+    {
+      "label": "setup-preview",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "setup",
+        "--ios",
+        "--project",
+        "MixedCache.xcworkspace",
+        "--scheme",
+        "MixedCacheProbe",
+        "--input",
+        "Dependencies",
+        "--input",
+        "Vendor",
+        "--agent",
+        "all",
+        "--developer-dir",
+        "/Applications/Xcode.app/Contents/Developer",
+        "--retention-hours",
+        "0",
+        "--dry-run",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.07563520900000009
+    },
+    {
+      "label": "setup-installed",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "setup",
+        "--ios",
+        "--project",
+        "MixedCache.xcworkspace",
+        "--scheme",
+        "MixedCacheProbe",
+        "--input",
+        "Dependencies",
+        "--input",
+        "Vendor",
+        "--agent",
+        "all",
+        "--developer-dir",
+        "/Applications/Xcode.app/Contents/Developer",
+        "--retention-hours",
+        "0",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08647424999999975
+    },
+    {
+      "label": "setup-ios-profile",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "setup",
+        "--ios",
+        "--project",
+        "MixedCache.xcworkspace",
+        "--scheme",
+        "MixedCacheProbe",
+        "--input",
+        "Dependencies",
+        "--input",
+        "Vendor",
+        "--agent",
+        "all",
+        "--developer-dir",
+        "/Applications/Xcode.app/Contents/Developer",
+        "--retention-hours",
+        "0",
+        "--profile",
+        "ios",
+        "--scheme",
+        "MixedCacheApp",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08437350000000032
+    },
+    {
+      "label": "wt-create-a",
+      "argv": [
+        "/opt/homebrew/bin/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/seed",
+        "switch",
+        "--create",
+        "a",
+        "--base",
+        "main",
+        "--path",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+        "--no-cd"
+      ],
+      "exitCode": 0,
+      "seconds": 0.6300605409999998
+    },
+    {
+      "label": "hook-context-a",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "status",
+        "--worktree",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.0918109170000001
+    },
+    {
+      "label": "prepare-a",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.07432675
+    },
+    {
+      "label": "wt-create-b",
+      "argv": [
+        "/opt/homebrew/bin/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/seed",
+        "switch",
+        "--create",
+        "b",
+        "--base",
+        "main",
+        "--path",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "--no-cd"
+      ],
+      "exitCode": 0,
+      "seconds": 0.28525529199999955
+    },
+    {
+      "label": "hook-context-b",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "status",
+        "--worktree",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08782604199999966
+    },
+    {
+      "label": "prepare-b",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.0770624170000005
+    },
+    {
+      "label": "wt-switch-a",
+      "argv": [
+        "/opt/homebrew/bin/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/seed",
+        "switch",
+        "a",
+        "--no-cd"
+      ],
+      "exitCode": 0,
+      "seconds": 0.04057087500000023
+    },
+    {
+      "label": "prepare-a-resumed",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.07564583399999947
+    },
+    {
+      "label": "build-a",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 10.069888708
+    },
+    {
+      "label": "build-a-probe",
+      "argv": [
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "seconds": 0.23206783400000042
+    },
+    {
+      "label": "settings-a",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-showBuildSettings",
+        "-json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.8009699579999996
+    },
+    {
+      "label": "doctor-a",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "doctor",
+        "--integration",
+        "--build-settings",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/settings-a.json",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.12393845800000136
+    },
+    {
+      "label": "build-b",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 8.31527925
+    },
+    {
+      "label": "build-b-probe",
+      "argv": [
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "seconds": 0.23510837500000292
+    },
+    {
+      "label": "settings-b",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-showBuildSettings",
+        "-json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.8635565840000012
+    },
+    {
+      "label": "doctor-b",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "doctor",
+        "--integration",
+        "--build-settings",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/settings-b.json",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.13009895800000137
+    },
+    {
+      "label": "test-b",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "test"
+      ],
+      "exitCode": 0,
+      "seconds": 6.207812416000003
+    },
+    {
+      "label": "prepare-ios-b",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "prepare",
+        "--profile",
+        "ios",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08436279100000377
+    },
+    {
+      "label": "build-ios-b",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheApp",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/ec4d76896f8e4fa18f1a363e3dff8545/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/ec4d76896f8e4fa18f1a363e3dff8545/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "generic/platform=iOS Simulator",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 6.1056392079999995
+    },
+    {
+      "label": "recover-a",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.07998933399999686
+    },
+    {
+      "label": "build-recovered-a",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 7.707461917000003
+    },
+    {
+      "label": "build-recovered-a-probe",
+      "argv": [
+        "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "seconds": 0.24019883399999742
+    },
+    {
+      "label": "wt-remove-a",
+      "argv": [
+        "/opt/homebrew/bin/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/seed",
+        "remove",
+        "--foreground",
+        "--no-delete-branch",
+        "a"
+      ],
+      "exitCode": 0,
+      "seconds": 0.34367495899999767
+    },
+    {
+      "label": "build-b-after-a-removal",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 0.9718750829999934
+    },
+    {
+      "label": "build-b-after-a-removal-probe",
+      "argv": [
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "seconds": 0.009296124999998767
+    },
+    {
+      "label": "gc-plan",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "gc",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.27913862500000164
+    },
+    {
+      "label": "gc-apply",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "gc",
+        "--apply",
+        "438d0fb7a9f44794a9e4f02a457e15fc",
+        "--quiescent",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 1.015981250000003
+    },
+    {
+      "label": "final-status",
+      "argv": [
+        "/Users/kent/.local/bin/idutil",
+        "status",
+        "--measure",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.28015083300000043
+    },
+    {
+      "label": "prepare-resolved-b",
+      "argv": [
+        "idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.134333167
+    },
+    {
+      "label": "build-resolved-b",
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "-configuration",
+        "Debug",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "DEBUG_INFORMATION_FORMAT=dwarf",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 8.779449416999999
+    },
+    {
+      "label": "probe-resolved-b",
+      "argv": [
+        "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "seconds": 0.24040458300000012
+    },
+    {
+      "label": "reuse-after-build-b",
+      "argv": [
+        "idutil",
+        "prepare",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08502108299999911
+    },
+    {
+      "label": "doctor-settled-b",
+      "argv": [
+        "idutil",
+        "doctor",
+        "--integration",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.1350740409999993
+    },
+    {
+      "label": "final-status-settled",
+      "argv": [
+        "idutil",
+        "status",
+        "--measure",
+        "--json"
+      ],
+      "exitCode": 0,
+      "seconds": 0.35510595799999933
+    }
+  ],
+  "checks": {
+    "hookIsolationAndReuse": "passed",
+    "actualBuildPaths": "passed",
+    "managedRecovery": "passed",
+    "removeAWhileKeepingB": "passed",
+    "gcActualDeletion": "passed",
+    "postResolutionReuse": "passed",
+    "finalDoctorB": "passed"
+  },
+  "limitations": [
+    "No autonomous Claude/Codex host session or Xcode GUI test",
+    "iOS compile/link only; no simulator device created"
+  ],
+  "versions": {
+    "idutil": "idutil 0.1.0",
+    "worktrunk": "wt v0.81.0"
+  },
+  "userConfigExisted": false,
+  "installation": {
+    "schemaVersion": 1,
+    "result": "installed",
+    "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+    "root": "/Users/kent/Library/Application Support/idutil",
+    "worktrunkVersion": "wt v0.81.0",
+    "worktrunkConfig": "/Users/kent/.config/worktrunk/config.toml",
+    "hookCommands": {
+      "pre-start": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook prepare --worktree {{ worktree_path }} --json",
+      "pre-remove": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook check-release --worktree {{ worktree_path }} --json",
+      "post-remove": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook release --worktree {{ worktree_path }} --json"
+    },
+    "profile": {
+      "target": "MixedCache.xcworkspace",
+      "scheme": "MixedCacheProbe",
+      "inputs": [
+        "Dependencies",
+        "Vendor"
+      ],
+      "developerDir": "/Applications/Xcode.app/Contents/Developer",
+      "sharedCache": false,
+      "sharedCacheEpoch": null
+    },
+    "agentFiles": [
+      ".agents/skills/ios-disk-util/SKILL.md",
+      "AGENTS.md",
+      ".claude/skills/ios-disk-util/SKILL.md",
+      "CLAUDE.md"
+    ],
+    "warnings": [],
+    "automaticGC": "deferred: external writer quiescence is not established by hooks"
+  },
+  "initialResourceIds": [],
+  "contexts": {
+    "a": {
+      "schemaVersion": 1,
+      "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+      "worktreeId": "9e689b24db5c512444f4b182",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "resourceId": "567ad2956f394e629c4ad401d3292d16",
+      "generation": 1,
+      "profile": "default",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+      "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+      "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/Artifacts",
+      "xcodebuildArgs": [
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ],
+      "environment": {
+        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+      },
+      "mcpSessionDefaults": {
+        "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+        "scheme": "MixedCacheProbe",
+        "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+        "extraArgs": [
+          "-clonedSourcePackagesDirPath",
+          "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+          "COMPILATION_CACHE_ENABLE_CACHING=NO"
+        ]
+      },
+      "clearMCPDefault": "projectPath",
+      "cacheMode": "private-only",
+      "cacheConnections": {
+        "compilation": null,
+        "packageDownloads": "external-tool-owned; not garbage collected"
+      },
+      "adapterSupport": {
+        "xcodebuild": "build/test with explicit managed paths",
+        "xcodebuildmcp": {
+          "verifiedVersion": "2.7.0",
+          "verifiedAction": "build_macos",
+          "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+          "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+          "otherVersionsAndActions": "require verification"
+        },
+        "xcodeGUI": "not verified"
+      },
+      "configurationEvidence": "unknown",
+      "usageEvidence": "unknown"
+    },
+    "b": {
+      "schemaVersion": 1,
+      "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+      "worktreeId": "4c22d0d62030d429c5e228a0",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+      "resourceId": "0b5237ea7511423b91d2c88c7b192cfc",
+      "generation": 1,
+      "profile": "default",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+      "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+      "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/Artifacts",
+      "xcodebuildArgs": [
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ],
+      "environment": {
+        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+      },
+      "mcpSessionDefaults": {
+        "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+        "scheme": "MixedCacheProbe",
+        "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData",
+        "extraArgs": [
+          "-clonedSourcePackagesDirPath",
+          "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages",
+          "COMPILATION_CACHE_ENABLE_CACHING=NO"
+        ]
+      },
+      "clearMCPDefault": "projectPath",
+      "cacheMode": "private-only",
+      "cacheConnections": {
+        "compilation": null,
+        "packageDownloads": "external-tool-owned; not garbage collected"
+      },
+      "adapterSupport": {
+        "xcodebuild": "build/test with explicit managed paths",
+        "xcodebuildmcp": {
+          "verifiedVersion": "2.7.0",
+          "verifiedAction": "build_macos",
+          "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+          "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+          "otherVersionsAndActions": "require verification"
+        },
+        "xcodeGUI": "not verified"
+      },
+      "configurationEvidence": "unknown",
+      "usageEvidence": "unknown"
+    }
+  },
+  "recoveredContext": {
+    "schemaVersion": 1,
+    "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+    "worktreeId": "9e689b24db5c512444f4b182",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+    "resourceId": "cb016b136b7a49f3a2ec1fa97d794778",
+    "generation": 2,
+    "profile": "default",
+    "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+    "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+    "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/Artifacts",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=NO"
+    ],
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "mcpSessionDefaults": {
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "scheme": "MixedCacheProbe",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ]
+    },
+    "clearMCPDefault": "projectPath",
+    "cacheMode": "private-only",
+    "cacheConnections": {
+      "compilation": null,
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "adapterSupport": {
+      "xcodebuild": "build/test with explicit managed paths",
+      "xcodebuildmcp": {
+        "verifiedVersion": "2.7.0",
+        "verifiedAction": "build_macos",
+        "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+        "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+        "otherVersionsAndActions": "require verification"
+      },
+      "xcodeGUI": "not verified"
+    },
+    "configurationEvidence": "unknown",
+    "usageEvidence": "unknown"
+  },
+  "remainingStatus": {
+    "schemaVersion": 1,
+    "observedAt": 1793595469.401448,
+    "resources": [
+      {
+        "id": "0b5237ea7511423b91d2c88c7b192cfc",
+        "profile": "default",
+        "generation": 1,
+        "status": "retired",
+        "reason": "prepare",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "presence": "present",
+        "logicalBytes": 283401199,
+        "fingerprint": "053c2aa9f6e916ea8dee341c0c3ba108d060ccac8e5e399e4fab4119a27d2c6a",
+        "protected": [
+          "DerivedData/Logs/Test/Test-MixedCacheProbe-2026.11.02_13-56-14-+0900.xcresult"
+        ]
+      },
+      {
+        "id": "0e07df0b46dc44aa803e5a72111e31bd",
+        "profile": "ios",
+        "generation": 1,
+        "status": "deleted",
+        "reason": "prepare",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/0e07df0b46dc44aa803e5a72111e31bd",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "presence": "present",
+        "diagnostic": "Resource identity changed or missing"
+      },
+      {
+        "id": "567ad2956f394e629c4ad401d3292d16",
+        "profile": "default",
+        "generation": 1,
+        "status": "deleted",
+        "reason": "prepare",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+        "presence": "removed",
+        "diagnostic": "Resource identity changed or missing"
+      },
+      {
+        "id": "cb016b136b7a49f3a2ec1fa97d794778",
+        "profile": "default",
+        "generation": 2,
+        "status": "deleted",
+        "reason": "declared-input-changed",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+        "presence": "removed",
+        "diagnostic": "Resource identity changed or missing"
+      },
+      {
+        "id": "d2f25cb58e1548fbb16950971153ac5d",
+        "profile": "ios",
+        "generation": 1,
+        "status": "deleted",
+        "reason": "prepare",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/d2f25cb58e1548fbb16950971153ac5d",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+        "presence": "removed",
+        "diagnostic": "Resource identity changed or missing"
+      },
+      {
+        "id": "ec4d76896f8e4fa18f1a363e3dff8545",
+        "profile": "ios",
+        "generation": 2,
+        "status": "active",
+        "reason": "declared-input-changed",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/ec4d76896f8e4fa18f1a363e3dff8545",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "presence": "present",
+        "logicalBytes": 134027778,
+        "fingerprint": "c18ee643bd060d3013553f8ffa8491bfceeabea8dec4fdaf6068bf56ef85963a",
+        "protected": []
+      },
+      {
+        "id": "fbac9710e2c74a5d993a02974eca45a3",
+        "profile": "default",
+        "generation": 2,
+        "status": "active",
+        "reason": "declared-input-changed",
+        "path": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+        "presence": "present",
+        "logicalBytes": 204936738,
+        "fingerprint": "b9cef77d4c7150c96a6447d372ca3980ee941e6e69377ec06bf1c674bfdddf90",
+        "protected": []
+      }
+    ],
+    "sharedCaches": {},
+    "buildContext": null,
+    "configurationEvidence": "unknown",
+    "usageEvidence": "unknown"
+  },
+  "settledBContext": {
+    "schemaVersion": 1,
+    "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+    "worktreeId": "4c22d0d62030d429c5e228a0",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+    "resourceId": "fbac9710e2c74a5d993a02974eca45a3",
+    "generation": 2,
+    "profile": "default",
+    "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/DerivedData",
+    "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/SourcePackages",
+    "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/Artifacts",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=NO"
+    ],
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "mcpSessionDefaults": {
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace",
+      "scheme": "MixedCacheProbe",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ]
+    },
+    "clearMCPDefault": "projectPath",
+    "cacheMode": "private-only",
+    "cacheConnections": {
+      "compilation": null,
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "adapterSupport": {
+      "xcodebuild": "build/test with explicit managed paths",
+      "xcodebuildmcp": {
+        "verifiedVersion": "2.7.0",
+        "verifiedAction": "build_macos",
+        "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+        "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+        "otherVersionsAndActions": "require verification"
+      },
+      "xcodeGUI": "not verified"
+    },
+    "configurationEvidence": "unknown",
+    "usageEvidence": "unknown"
+  }
+}

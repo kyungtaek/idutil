@@ -1,0 +1,58 @@
+Unrecognized xcodebuild output lines (56):
+
+ARCHS = arm64
+CODE_SIGNING_ALLOWED = NO
+COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS
+COMPILATION_CACHE_ENABLE_CACHING = YES
+2026-11-02 13:31:15.690 xcodebuild[58901:53400174] Writing test products to /Users/kent/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/test-products/test_macos_2026-11-02T04-31-15-279Z_pid58781_80afd67e.xctestproducts
+RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/RemoteFeature @ e811637
+LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Dependencies/LocalFeature
+note: Building targets in dependency order
+note: Target dependency graph (9 targets)
+Target 'MixedCacheTests' in project 'MixedCache'
+➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+Target 'MixedCacheProbe' in project 'MixedCache'
+➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+Target 'LocalFeature-product' in project 'LocalFeature'
+➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+Target 'LocalFeature' in project 'LocalFeature'
+➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+Target 'RemoteFeature-product' in project 'RemoteFeature'
+➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+Target 'Pods-MixedCacheProbe' in project 'Pods'
+➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+ValidateCAS /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/llvm-cas
+validation skipped
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+Ignoring --strip-bitcode because --sign was not passed
+/bin/sh -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-00C00BC2FE737045384C2AE0.sh
+GenerateDSYMFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest.dSYM /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests (in target 'MixedCacheTests' from project 'MixedCache')
+export PATH\=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/bin:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/local/bin:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Users/kent/workspace/ios-disk-util/.tools/worktrunk:/Users/kent/workspace/ios-disk-util/.tools/node/node-v22.23.4-darwin-arm64/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/kent/.codex/tmp/arg0-macos/codex-arg0N6nWVM:/Users/kent/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/kent/.unity/bin:/Users/kent/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest.dSYM
+GenerateDSYMFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe.dSYM /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe (in target 'MixedCacheProbe' from project 'MixedCache')
+export PATH\=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/bin:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/local/bin:/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Users/kent/workspace/ios-disk-util/.tools/worktrunk:/Users/kent/workspace/ios-disk-util/.tools/node/node-v22.23.4-darwin-arm64/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/kent/.codex/tmp/arg0-macos/codex-arg0N6nWVM:/Users/kent/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/kent/.unity/bin:/Users/kent/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe.dSYM
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+** TEST BUILD SUCCEEDED **
+ARCHS = arm64
+CODE_SIGNING_ALLOWED = NO
+COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS
+COMPILATION_CACHE_ENABLE_CACHING = YES
+Writing result bundle at path:
+2026-11-02 13:31:17.195 xcodebuild[58922:53400429]  DVTAssertions: Warning in IDEFrameworks/IDEFoundation/Execution/LaunchSystem/IDELaunchSession.m:395
+Details:  setRunnablePIDWithDiagnostics:logSection:andCompletionHandler: called without a completion handler - blocking until diagnostics setup completes. Callers should migrate to using a completion handler for better performance.
+Object:   <IDELaunchSession: 0x779c515680>
+Method:   -setRunnablePIDWithDiagnostics:logSection:andCompletionHandler:
+Thread:   <NSThread: 0x77994cd9c0>{number = 14, name = (null)}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+2026-11-02 13:31:17.894 xcodebuild[58922:53400394] [MT] IDETestOperationsObserverDebug: 0.749 elapsed -- Testing started completed.
+2026-11-02 13:31:17.894 xcodebuild[58922:53400394] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-02 13:31:17.894 xcodebuild[58922:53400394] [MT] IDETestOperationsObserverDebug: 0.749 sec, +0.749 sec -- end
+Test session results, code coverage, and logs:
+** TEST EXECUTE SUCCEEDED **

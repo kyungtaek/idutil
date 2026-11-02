@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "result": "prepared",
+  "reused": false,
+  "recovered": true,
+  "warnings": [
+    "Managed subdirectory missing: DerivedData"
+  ],
+  "buildContext": {
+    "schemaVersion": 1,
+    "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+    "worktreeId": "9e689b24db5c512444f4b182",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+    "resourceId": "cb016b136b7a49f3a2ec1fa97d794778",
+    "generation": 2,
+    "profile": "default",
+    "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+    "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+    "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/Artifacts",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=NO"
+    ],
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "mcpSessionDefaults": {
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "scheme": "MixedCacheProbe",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ]
+    },
+    "clearMCPDefault": "projectPath",
+    "cacheMode": "private-only",
+    "cacheConnections": {
+      "compilation": null,
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "adapterSupport": {
+      "xcodebuild": "build/test with explicit managed paths",
+      "xcodebuildmcp": {
+        "verifiedVersion": "2.7.0",
+        "verifiedAction": "build_macos",
+        "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+        "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+        "otherVersionsAndActions": "require verification"
+      },
+      "xcodeGUI": "not verified"
+    },
+    "configurationEvidence": "unknown",
+    "usageEvidence": "unknown"
+  }
+}

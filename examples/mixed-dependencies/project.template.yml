@@ -1,0 +1,55 @@
+name: MixedCache
+options:
+  xcodeVersion: '16.0'
+  deploymentTarget:
+    macOS: '14.0'
+    iOS: '17.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGNING_ALLOWED: NO
+    COMPILATION_CACHE_ENABLE_CACHING: YES
+    COMPILATION_CACHE_ENABLE_DIAGNOSTIC_REMARKS: YES
+packages:
+  RemoteFeature:
+    url: '__REMOTE_URL__'
+    revision: '__REMOTE_REVISION__'
+  LocalFeature:
+    path: Dependencies/LocalFeature
+targets:
+  MixedCacheProbe:
+    type: tool
+    platform: macOS
+    sources:
+      - Sources/Shared
+      - Sources/Probe
+    dependencies:
+      - package: RemoteFeature
+      - package: LocalFeature
+      - framework: Vendor/BinaryFeature.xcframework
+        embed: false
+  MixedCacheApp:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/Shared
+      - Sources/App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.iosdiskutil.mixedcache
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    dependencies:
+      - package: RemoteFeature
+      - package: LocalFeature
+      - framework: Vendor/BinaryFeature.xcframework
+        embed: false
+schemes:
+  MixedCacheProbe:
+    build:
+      targets:
+        MixedCacheProbe: all
+  MixedCacheApp:
+    build:
+      targets:
+        MixedCacheApp: all

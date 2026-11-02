@@ -1,0 +1,618 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace -scheme MixedCacheProbe -derivedDataPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData -clonedSourcePackagesDirPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages COMPILATION_CACHE_ENABLE_CACHING=YES COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS -destination platform=macOS,arch=arm64 -configuration Debug test CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS
+    COMPILATION_CACHE_ENABLE_CACHING = YES
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Dependencies/LocalFeature
+  RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/RemoteFeature @ e811637
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (9 targets)
+    Target 'MixedCacheTests' in project 'MixedCache'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'MixedCacheProbe' in project 'MixedCache'
+        ➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'LocalFeature-product' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature_LocalFeature' in project 'LocalFeature' (no dependencies)
+    Target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+    Target 'RemoteFeature' in project 'RemoteFeature' (no dependencies)
+    Target 'Pods-MixedCacheProbe' in project 'Pods'
+        ➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+    Target 'PodFeature-macOS' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: e6aefe277cc09c4467d164bdfcac99d9
+Build description path: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/XCBuildData/e6aefe277cc09c4467d164bdfcac99d9.xcbuilddata
+ValidateCAS /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/llvm-cas
+validation skipped
+
+WriteCASConfig /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/.cas-config
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/.cas-config
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist (in target 'LocalFeature_LocalFeature' from project 'LocalFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Dependencies/LocalFeature
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.hmap
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap
+
+MkDir /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/mkdir -p /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources
+
+MkDir /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/mkdir -p /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents
+
+MkDir /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/mkdir -p /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS
+
+MkDir /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/mkdir -p /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist (in target 'Pods-MixedCacheProbe' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources/LocalFeature_LocalFeature.bundle /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources
+
+SwiftDriver MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a -experimental-emit-module-separately -disable-cmo
+
+PhaseScriptExecution [CP]\ Check\ Pods\ Manifest.lock /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-00C00BC2FE737045384C2AE0.sh (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/sh -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-00C00BC2FE737045384C2AE0.sh
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -scanforprivacyfile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources/LocalFeature_LocalFeature.bundle -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_float-21H0OOIHF3JZMO9W9OKWGYKDA.pcm
+note: local cache miss for key: llvmcas://59cefe19651982899a1677f7771b2e3b84fb06c5eebbd6ab45a66f1b7bcff53c
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-EYHTPBBFJVDXCVH2K9U3VVA2.pcm
+note: local cache miss for key: llvmcas://73db6640d396ff5aa806d5db201aad76b2e2c1e29e762a2b8ab49a4255a44332
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/SwiftShims-BVE0EC8FKPH3C62KDEN2L1HQ6.pcm
+note: local cache miss for key: llvmcas://d8d42a579c65078e5d0f6e7785f1fb3fb807f3d6cc25949bbcbbf4d6354a30a0
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdarg-5YBED403FA8FQ7GNWQ4B4ML5V.pcm
+note: local cache miss for key: llvmcas://9ba739d733101a17bf3fd2d8b5170c1c606c6ae2e5ef1eaafe9e45ef94ec40dc
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/DeveloperToolsSupport-6PZNVDS2O2MIA7EY4YGCH3AJ0.pcm
+note: local cache miss for key: llvmcas://a36c1abcfafd93abcabc1f9adb594efa922e831504eae9e678be29bbc7964c8e
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stddef-AG39C47F7J0TOQS7VRU7IDTZH.pcm
+note: local cache miss for key: llvmcas://ca1dc3c57518b7a7d6a5028eb672a597f9a836079584579d9284cb4e16d61e11
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdbool-57YXRRF81DBR4HQZMC3OQETUF.pcm
+note: local cache miss for key: llvmcas://26d3e6b45ba3911d7578c67a1dfd573745cbbc66891096955ec7d25bc0f9e0ae
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ptrcheck-54H0OHCC086ZQMSAFHVHBVCN6.pcm
+note: local cache miss for key: llvmcas://3de158ac84e5a559e265024f6f14da02d260b20cd04917154302f77c4f6d6962
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ptrauth-5XDJN76UI4A3FU8KG9LKC0S65.pcm
+note: local cache miss for key: llvmcas://60fd356f01dc09d5154cc7fb07bca0a02aceaa0c545e224c9204a8c0b9f2026f
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_AvailabilityInternal-L09O1B15HR2Y51TB2UQQ5XN5.pcm
+note: local cache miss for key: llvmcas://c52791beff424f4b58c04098f2212b9ed4b3a5de6a6c6222cbc865b87ae9783e
+note: replay cache miss
+Cache miss
+
+SwiftCachingPruneData /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation1-FADJTDJ0FP01CRRWWEPYKBF2.pcm
+note: local cache miss for key: llvmcas://360c3a47004e35218efb2dc7489145ee7de7340c6b0e5f2f785f798b1428cc20
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_limits-3E91FRP36ZP401J9R5REVDMI0.pcm
+note: local cache miss for key: llvmcas://9d526520abeb91ef9b9657132610c2755d00a6f3700dd2cfb2a899db2c5976f8
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation2-F3KKLZMDQ6CL7HREYMJ0KEKY9.pcm
+note: local cache miss for key: llvmcas://f34ec5679d6a28e64cc5598d63c8f4d04166763a5fc96c36cc512b405389ea48
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdint-9HTEMTEMJAHC5RO2NX9GZFL7N.pcm
+note: local cache miss for key: llvmcas://44c80677659ac9814566e70b870475f295e0c7bdd0b0d376f9aee7d81f692071
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/string_h-5QLHMLVDHF3TB3SVVVFSTDPBQ.pcm
+note: local cache miss for key: llvmcas://44930772e5ab77039d49144dff0c421ccc411ad30ffad0b62a89e67d7b288e8a
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_tgmath-8KYB1W9IBDG9YFPWQKV6KR1CJ.pcm
+note: local cache miss for key: llvmcas://c421309fed810df09419d5dc423fa97ee09eb7c8d00c0613a4d4d7c01974e7da
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/sys_types-D6SZ59I1TXCB9DCGJL7P6XBP3.pcm
+note: local cache miss for key: llvmcas://01fa92454c0de1f08852a5c58cd31172cda6c89f233f58b1dbe1902f3510e8cf
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/libDER-AVW5A33V9VQDS385DEAKNA7N5.pcm
+note: local cache miss for key: llvmcas://c0d27f9581b46dde5bdf4d84e0868f3ad3da24d1183de62cb0eebcf6cef78481
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_intrinsics-D4KPWTOQCKGC216EJFSJEH2DB.pcm
+note: local cache miss for key: llvmcas://1b70e36fb26e0450a86dadf58ddecd3e72c0ea95b3f16d32d027785f965a5fa9
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation3-DRUPFN14LSIO8T5219J8IVS3Q.pcm
+note: local cache miss for key: llvmcas://15d6e856e6953775b738d3e388b567710ed273866d14dccdfd11734adced946a
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdatomic-ZY2O1SZOSS4Z49II74IMM38K.pcm
+note: local cache miss for key: llvmcas://6a749865c28c792d98228c5b3b8ec40aa3627d2ff31ecf07dc96fa91d39b6cd4
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/_Builtin_inttypes-6IYD64H7GDBP96VUCJ2HCMMOV.pcm
+note: local cache miss for key: llvmcas://d93263d80044ab531c5ae288aed7e9a287fb12b27cd6ec6096760309caf6e45a
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Darwin-38PVH5C44FMHP2XGRUGP685LH.pcm
+note: local cache miss for key: llvmcas://9917995b15816e278bec1eafe4bda3444eace65afe53610fd859a8b5a3fee0b4
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/simd-9KICC2OKJBHLQ5TM70A8EZ4D7.pcm
+note: local cache miss for key: llvmcas://daa79d7fa6c6abec0274f85da5db14efe21e94bef681a396d2b5a9225f08624d
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CUPS-82DF9U7QQUHEN8DUKJY3KY0EF.pcm
+note: local cache miss for key: llvmcas://7aa0f2b48be24e66d899c22d9be7f1480f0184fd8e66043e45c4a51d40098b81
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/launch-5ERIKULMLOB5A4PJ27Z7T4SNP.pcm
+note: local cache miss for key: llvmcas://995d5284c85eebc8d56a638427bc8dd8e26e9874edccd94a6ab3c5ae6fb50e0b
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/libkern-EMDU6TSL0OQR93UMWRGKJE7GG.pcm
+note: local cache miss for key: llvmcas://62d698dbd1c199a098ac585c87991cb59858b7081a63924b74f5f30a797224e5
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/MachO-EJYCGJ2AYTHV9UC0091LLSYWE.pcm
+note: local cache miss for key: llvmcas://112583acf4aebab876b62d8dee296e35c14411a2faed86c79772b6458eda7c10
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ObjectiveC-B6D7RMB2KZLPS1REUM8ZDNAEW.pcm
+note: local cache miss for key: llvmcas://620fa01ce23046bbc7f85caeb2d05f3d0997045239de5c30fb7387245cc01820
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Spatial-9UZSZWMSTMFZ9LV3D564NRGYB.pcm
+note: local cache miss for key: llvmcas://0099d5e9ab5ddcbf1b68f493b4178a2da98b320bf3bbf96f99fa37f4f3547223
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/os_object-29ZEZOK5XEQMD9KDR5PS885LG.pcm
+note: local cache miss for key: llvmcas://8ffbf36785e82350ab9cac63e75a3294d2777b859cdce2b763acae31df1f7daa
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/os_workgroup-58431E46TX0HDTI9P8JXJU474.pcm
+note: local cache miss for key: llvmcas://bfe1cb5f79bda4648aae1f86dc3f9cf4f8aa58c61d426b0217829ec49657c886
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Dispatch-BDGZF5I9TVPTKAJ5Z9BOJV262.pcm
+note: local cache miss for key: llvmcas://71283fd2864b39e87c16cc84f7d65bfdb04b22720661015a37a0a3f335931fb8
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/XPC-84CJZGT1LSNZQGIDLH4YHCAO2.pcm
+note: local cache miss for key: llvmcas://bddf7784fc394ca4e669cafddd158a5112bb6e391f31b85a3cd77cc2e1a0d341
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreFoundation-9WKV0RE7OERW8MLS32V39FXBS.pcm
+note: local cache miss for key: llvmcas://67e5c0e1f3dae39b258ecac28a39f9bac87370ad4fa3895653c4cafe38db4cc3
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/os-8G6QN18Z835O4HZI9S3CQJ3TP.pcm
+note: local cache miss for key: llvmcas://6745d699c38e7f5b2bcfc8a117dbc2608c859bbdfe434b33f64573d9e8f5785a
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ColorSync-2LOA7SI41IZPJMNWHNGBNTUAY.pcm
+note: local cache miss for key: llvmcas://ed94342f0d04b800979e2cd6766c489c0a5eec0db4e9bc2576d011c7103dfd2f
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CFNetwork-O8RNI05Y89FTVRF1W13WH3SK.pcm
+note: local cache miss for key: llvmcas://6c91f40cac281c7b52dd37b2dbe91f3bc29f8dc1c8b6834a45beb1554a6eae28
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Security-62TD4B2INI7RPGWJD4V46PINE.pcm
+note: local cache miss for key: llvmcas://0b4d0ed9fd0be5f3db608a98395075f17fd09146e96806d5f45e0e22b82fd7a4
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/IOKit-555O777CJQRNF3C33B8FVES3H.pcm
+note: local cache miss for key: llvmcas://9a35a11232b21be3d562239987298f5e7802fe9689b6deeb81fa7f6587a3002d
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreGraphics-C6ZFF1X1KIJUXPE6E5V9ACSZB.pcm
+note: local cache miss for key: llvmcas://ce31aee5c0a9e19c73bd714b1fc4e29d6ac4a0ba479f7fa84b86a60e7803ba74
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/DiskArbitration-7TQVQZS03USRCUCYSJEE60KIC.pcm
+note: local cache miss for key: llvmcas://9737c5d422be1b8768732b397276f140f3b5966a47b46b601a6cae1da7039317
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreServices-B2D8YMXLOFSYEKVRMI9T8Q8YX.pcm
+note: local cache miss for key: llvmcas://ea89b530dc944a9b5b4410792a3b38a62c5c923a38a21573e18a639801df994a
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreText-6YLF9KCH574V7C2TA0PUASODA.pcm
+note: local cache miss for key: llvmcas://a10bb9574d2f7b68fe70dae07880209f7fe188f268d27a069a9a84d9b664dfce
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ImageIO-BW6PESGS4GY3EPLAVIZMFX4YV.pcm
+note: local cache miss for key: llvmcas://b0328c3b33bf8fdbef506150cc06567df59193b47b36c16e8f7a4e16cb80e9fd
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Foundation-DG63A8XC6WBIPNAGRT0JGCQRZ.pcm
+note: local cache miss for key: llvmcas://810f6edc1ef2de76bba73d42ddf150f67e3622a9d7fb2cb2c9f04050e51d27f1
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Symbols-5J4C9HYMXWIR8C7L40MQETAQO.pcm
+note: local cache miss for key: llvmcas://617f0269b2179f21bb7e508291618d7752c86d0bcc1acd71f94391173a1373dc
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/DataDetection-ALYN2ELFNPHQB9GTCLC5COLTJ.pcm
+note: local cache miss for key: llvmcas://d8e8e0788d75e4cff6e7918026559012ab0905df2fcadec09721f593fba95944
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreData-5BP69LAXUWTQ59E1VPFJFLDZC.pcm
+note: local cache miss for key: llvmcas://c2475dac2262bd838af4b444978a0427e5cd31656805bc659549f1bb1c153503
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Accessibility-E65ZM63VHVP35OTKZ1C9X0SI5.pcm
+note: local cache miss for key: llvmcas://162057019e0314e352550cad3e7578a22523405f120b4df826cac3a6de80abd7
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/ApplicationServices-AWFRS4O9ARVE5KI2QUKYH44A3.pcm
+note: local cache miss for key: llvmcas://5570cc729ee413ad15c47af4ddd69efc7eb6b0712477c4a4212fcc0d1ff7ec79
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/IOSurface-7UOZ0A70SP05XFYBPU37D8565.pcm
+note: local cache miss for key: llvmcas://72c7a5c8ce8373d9345506495570b0696c410106e94f3b6fbe137f9fa6308d22
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/OSLog-EXB0VGURDIHN1PEPILJOQM6DG.pcm
+note: local cache miss for key: llvmcas://e5acac985a57c2076bc57af613121bef1e71bee8d8ad6d680dc7bf1b79355870
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-B6J1VJEAFVOGOTC3XGR0HNOT1.pcm
+note: local cache miss for key: llvmcas://0afc44f4249387c1369cabb7fa002f75c1739181425437421ea6bce4fa5d913f
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreTransferable-2YFTMHN0T1666SDAQYZXTHQE4.pcm
+note: local cache miss for key: llvmcas://091c17b391ac9314b2b8effb32d1e17e1ea9f0fd4102c86b8f3e4d0c7e5dc5f8
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/Metal-EPEI8USKBXTAMLCAKYOBU8L91.pcm
+note: local cache miss for key: llvmcas://a4fdaafdcb99b951ccc2e1c90582ef06c2e15a92f14e86efd54d9df9097a40a9
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/OpenGL-1ND3LCEW5WQSASWR6YIV6QXTV.pcm
+note: local cache miss for key: llvmcas://30951d092e05578afa2cfdbeba842593b925b091d4996ade876dae1c0afdcc9b
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreVideo-6VQUV0D8I1NZL0I3OS7ID5EEL.pcm
+note: local cache miss for key: llvmcas://b19df99eeb4fd3244eefcdbb51ccf82da5ce33c33d5e7fb25e317e444d51f5f7
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/QuartzCore-8YOVU6Z3JQRPI6S2QMS3RI83S.pcm
+note: local cache miss for key: llvmcas://f3d7d3d356f4fab2bbd41e6e0f782debc73fdaadddbc847cb7037eba1ba28845
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/CoreImage-BOI11F1R2X2UJH9396MP7GAMT.pcm
+note: local cache miss for key: llvmcas://c559d9876846a19bfbec91235a2a72e7b3fbe93aef15b37e81ebb2ff5ef6450f
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/SwiftUICore-4PULTQS47D2I5RBYSQ1UTD314.pcm
+note: local cache miss for key: llvmcas://026409ff8b408aa5f857c9060b81755017cc3a70731e4dc80dcac86221c31bfc
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules/AppKit-BX597LHCVVZ84M3TM7ZIOZG1G.pcm
+note: local cache miss for key: llvmcas://48c0b5e32f7d7d2b5f1f10b20e68599c4bd509e66af8b85f091a654b6a0b3c24
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-CUDTYQLMXMUN9MNJ9EILQV3P0.pcm
+note: local cache miss for key: llvmcas://0adc7e0c3786af32d5a57c525b19dbdd08bfea4697797864b7848e1f26531b0d
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-4FGSJ54062OWA2QGMH0MQ7Z49.pcm
+note: local cache miss for key: llvmcas://bc01f031f1ce70568c016f303253d57b83fecac5245eb38c3e1a3421ebc9d409
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-1KPHV9ZC6VESG.swiftmodule
+note: local cache miss for key: llvmcas://e53fe1407b9dbda43cdff4f0986b0e5a568c202fb4f035ae9ceed00fe9af07e3
+note: replay cache miss
+Cache miss
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-1NR86ADZ8GQOQ.swiftmodule
+note: local cache miss for key: llvmcas://896372ac3d649b9be12f4d17e5de6a00a9c0b867056af1c3affeb70272a1701d
+note: replay cache miss
+Cache miss
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MixedCacheTests (in target 'MixedCacheTests' from project 'MixedCache')
+note: Local cache miss for key: llvmcas://04e86621d25c7ea5003003d3ff95de6b08a256f548fe8033bc3606b392a6f926 (in target 'MixedCacheTests' from project 'MixedCache')
+note: Replay cache miss (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftCompile normal arm64 (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    
+
+Cache miss
+SwiftCompile normal arm64 Compiling\ CacheTests.swift /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Tests/CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+note: Local cache miss for key: llvmcas://487f42593c8b46a04afcafc46b1eb1cc166c6338e71a0628de93ca7207e38329 (in target 'MixedCacheTests' from project 'MixedCache')
+note: Replay cache miss (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftCompile normal arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Tests/CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-SwiftPerFileCompile CacheTests.swift
+
+Cache miss
+SwiftDriverJobDiscovery normal arm64 Emitting module for MixedCacheTests (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftDriver\ Compilation\ Requirements MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/MixedCacheTests-Swift.h /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-swiftHeaderTool -arch arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/MixedCacheTests-Swift.h
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.abi.json /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.abi.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.abi.json /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftmodule /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftdoc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftdoc (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftdoc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftsourceinfo (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftsourceinfo /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftDriver\ Compilation MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests normal (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PackageFrameworks -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests
+
+CopySwiftLibs /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests --scan-folder /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Frameworks --scan-folder /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/PlugIns --scan-folder /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Library/SystemExtensions --scan-folder /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Extensions --platform macosx --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain --module-name MixedCacheTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 14.0 --output /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources --target-triple arm64-apple-macos14.0 --binary-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests --dependency-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_dependency_info.dat --stringsdata-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList --metadata-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList --static-metadata-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-02 13:31:00.490 appintentsmetadataprocessor[58558:53398162] Starting appintentsmetadataprocessor export
+2026-11-02 13:31:00.492 appintentsmetadataprocessor[58558:53398162] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    builtin-RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+Touch /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /usr/bin/touch -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+CompilationCacheMetrics
+note: 0 hits / 68 cacheable tasks (0%)
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Test Suite 'All tests' started at 2026-11-02 13:31:01.750.
+Test Suite 'MixedCacheTests.xctest' started at 2026-11-02 13:31:01.751.
+Test Suite 'CacheTests' started at 2026-11-02 13:31:01.751.
+Test Case '-[MixedCacheTests.CacheTests testValue]' started.
+Test Case '-[MixedCacheTests.CacheTests testValue]' passed (0.002 seconds).
+Test Suite 'CacheTests' passed at 2026-11-02 13:31:01.754.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'MixedCacheTests.xctest' passed at 2026-11-02 13:31:01.754.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'All tests' passed at 2026-11-02 13:31:01.754.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.004) seconds
+
+Test session results, code coverage, and logs:
+	/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Logs/Test/Test-MixedCacheProbe-2026.11.02_13-30-56-+0900.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started
+2026-11-02 13:31:00.645 xcodebuild[58454:53397607]  DVTAssertions: Warning in IDEFrameworks/IDEFoundation/Execution/LaunchSystem/IDELaunchSession.m:395
+Details:  setRunnablePIDWithDiagnostics:logSection:andCompletionHandler: called without a completion handler - blocking until diagnostics setup completes. Callers should migrate to using a completion handler for better performance.
+Object:   <IDELaunchSession: 0x7cde775800>
+Method:   -setRunnablePIDWithDiagnostics:logSection:andCompletionHandler:
+Thread:   <NSThread: 0x7cdb194240>{number = 7, name = (null)}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+2026-11-02 13:31:02.028 xcodebuild[58454:53397596] [MT] IDETestOperationsObserverDebug: 1.491 elapsed -- Testing started completed.
+2026-11-02 13:31:02.028 xcodebuild[58454:53397596] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-02 13:31:02.028 xcodebuild[58454:53397596] [MT] IDETestOperationsObserverDebug: 1.491 sec, +1.491 sec -- end

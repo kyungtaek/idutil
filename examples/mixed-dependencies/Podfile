@@ -1,0 +1,13 @@
+install! 'cocoapods', :deterministic_uuids => true
+project 'MixedCache'
+use_frameworks! :linkage => :static
+
+target 'MixedCacheProbe' do
+  platform :osx, '14.0'
+  pod 'PodFeature', :path => 'Dependencies/PodFeature'
+end
+
+target 'MixedCacheApp' do
+  platform :ios, '17.0'
+  pod 'PodFeature', :path => 'Dependencies/PodFeature'
+end

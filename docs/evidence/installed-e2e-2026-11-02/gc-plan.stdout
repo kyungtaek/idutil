@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "planId": "438d0fb7a9f44794a9e4f02a457e15fc",
+  "createdAt": 1793595395.6872032,
+  "expiresAt": 1793596295.6872032,
+  "items": [
+    {
+      "resourceId": "0e07df0b46dc44aa803e5a72111e31bd",
+      "identity": [
+        16777233,
+        31968349,
+        1793595351.9347765
+      ],
+      "logicalBytes": 113,
+      "fingerprint": "6134c20a4ae65f38533eb91a6633f1737f752a5d5d7007c437994d5012973d52",
+      "protected": []
+    },
+    {
+      "resourceId": "567ad2956f394e629c4ad401d3292d16",
+      "identity": [
+        16777233,
+        31968121,
+        1793595350.97482
+      ],
+      "logicalBytes": 204952898,
+      "fingerprint": "dcab02a2f2673d2d222dd8f480e79fefe122c9b14751f760268d8e2a54532df8",
+      "protected": []
+    },
+    {
+      "resourceId": "cb016b136b7a49f3a2ec1fa97d794778",
+      "identity": [
+        16777233,
+        31981508,
+        1793595385.9749665
+      ],
+      "logicalBytes": 204963387,
+      "fingerprint": "4adaa6d1128c8b6505446f344fbfb90f6074bd1ac6df2bbf4b3de078a50c2d64",
+      "protected": []
+    },
+    {
+      "resourceId": "d2f25cb58e1548fbb16950971153ac5d",
+      "identity": [
+        16777233,
+        31968141,
+        1793595351.010049
+      ],
+      "logicalBytes": 113,
+      "fingerprint": "e16ea3c00bd036712ebc08240c3768e07026d19f7826326e60fc3432f3792001",
+      "protected": []
+    }
+  ],
+  "skipped": [
+    {
+      "resourceId": "0b5237ea7511423b91d2c88c7b192cfc",
+      "reason": "active-binding"
+    },
+    {
+      "resourceId": "ec4d76896f8e4fa18f1a363e3dff8545",
+      "reason": "active-binding"
+    }
+  ],
+  "requiresQuiescent": true,
+  "logicalBytes": 409916511
+}

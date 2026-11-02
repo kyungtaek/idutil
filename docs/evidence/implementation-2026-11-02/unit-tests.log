@@ -1,0 +1,29 @@
+test_active_build_tool_veto (test_lifecycle.LifecycleTests) ... ok
+test_declared_same_mtime_change_rotates (test_lifecycle.LifecycleTests) ... ok
+test_dry_run_on_empty_root_makes_no_files (test_lifecycle.LifecycleTests) ... ok
+test_effective_mcp_path_conflict_diagnosed (test_lifecycle.LifecycleTests) ... ok
+test_gc_replaced_resource_and_symlink_target_protected (test_lifecycle.LifecycleTests) ... ok
+test_install_repeated_preserves_user_hooks_and_rule_edits (test_lifecycle.LifecycleTests) ... ok
+test_late_release_does_not_touch_recreated_worktree (test_lifecycle.LifecycleTests) ... ok
+test_parallel_prepare_single_generation (test_lifecycle.LifecycleTests) ... ok
+test_protected_xcresult_not_deleted (test_lifecycle.LifecycleTests) ... ok
+test_quiescence_and_changes_since_plan_protect (test_lifecycle.LifecycleTests) ... ok
+test_read_only_status_doctor_and_dry_run (test_lifecycle.LifecycleTests) ... ok
+test_recovery_managed_and_compare_and_swap (test_lifecycle.LifecycleTests) ... ok
+test_registry_corruption_does_not_reset_or_delete (test_lifecycle.LifecycleTests) ... ok
+test_removed_worktree_does_not_break_other_cache (test_lifecycle.LifecycleTests) ... ok
+test_resource_identifier_cannot_escape_root (test_lifecycle.LifecycleTests) ... ok
+test_reuse_switch_and_independent_worktrees (test_lifecycle.LifecycleTests) ... ok
+test_runtime_survives_source_worktree_removal (test_lifecycle.LifecycleTests) ... ok
+test_shared_cache_bypass_survives_generation_changes (test_lifecycle.LifecycleTests) ... ok
+test_symlink_derived_data_recovers_without_touching_target (test_lifecycle.LifecycleTests) ... ok
+test_unavailable_shared_cache_falls_back_and_stays_managed (test_lifecycle.LifecycleTests) ... ok
+test_uninstall_preserves_user_text_and_caches (test_lifecycle.LifecycleTests) ... ok
+test_update_preserves_registered_policy (test_lifecycle.LifecycleTests) ... ok
+test_worktree_protected_artifact_blocks_removal_check_only (test_lifecycle.LifecycleTests) ... ok
+test_create_switch_remove_and_non_registered_noop (test_worktrunk.WorktrunkIntegration) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 8.540s
+
+OK

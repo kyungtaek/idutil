@@ -1,0 +1,11 @@
+◎ Running pre-remove user:idutil @ '/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a '\''quoted'\'''
+  '/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook check-release --worktree '/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a '\''quoted'\''' --json
+{
+  "schemaVersion": 1,
+  "result": "checked",
+  "worktreeId": "9e689b24db5c512444f4b182",
+  "gc": "deferred-until-quiescent"
+}
+◎ Removing a worktree...
+✓ Removed a worktree (82 files · 136.4 KiB)
+◎ Running post-remove: idutil (user) @ ~/workspace/ios-disk-util/.lab/mixed-20261102-135547/seed

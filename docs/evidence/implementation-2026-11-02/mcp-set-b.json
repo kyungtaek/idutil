@@ -1,0 +1,48 @@
+{
+  "content": [
+    {
+      "text": "\n\u2699\ufe0f Set Defaults\n\n\u2705 Session defaults updated (default profile)\n  \u251c projectPath: (not set)\n  \u251c workspacePath: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace\n  \u251c scheme: MixedCacheProbe\n  \u251c configuration: Debug\n  \u251c simulatorName: (not set)\n  \u251c simulatorId: (not set)\n  \u251c simulatorPlatform: (not set)\n  \u251c deviceId: (not set)\n  \u251c useLatestOS: (not set)\n  \u251c arch: arm64\n  \u251c suppressWarnings: (not set)\n  \u251c derivedDataPath: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData\n  \u251c preferXcodebuild: true\n  \u251c platform: (not set)\n  \u251c bundleId: (not set)\n  \u251c env: (not set)\n  \u2514 extraArgs: -clonedSourcePackagesDirPath,/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages,COMPILATION_CACHE_ENABLE_CACHING=YES,COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS,CODE_SIGNING_ALLOWED=NO,ARCHS=arm64\n",
+      "type": "text"
+    }
+  ],
+  "structuredContent": {
+    "data": {
+      "currentProfile": "(default)",
+      "operation": {
+        "type": "set"
+      },
+      "profiles": {
+        "(default)": {
+          "arch": "arm64",
+          "bundleId": null,
+          "configuration": "Debug",
+          "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+          "deviceId": null,
+          "env": null,
+          "extraArgs": [
+            "-clonedSourcePackagesDirPath",
+            "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+            "COMPILATION_CACHE_ENABLE_CACHING=YES",
+            "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+            "CODE_SIGNING_ALLOWED=NO",
+            "ARCHS=arm64"
+          ],
+          "platform": null,
+          "preferXcodebuild": true,
+          "projectPath": null,
+          "scheme": "MixedCacheProbe",
+          "simulatorId": null,
+          "simulatorName": null,
+          "simulatorPlatform": null,
+          "suppressWarnings": null,
+          "useLatestOS": null,
+          "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace"
+        }
+      }
+    },
+    "didError": false,
+    "error": null,
+    "schema": "xcodebuildmcp.output.session-defaults",
+    "schemaVersion": "2"
+  }
+}

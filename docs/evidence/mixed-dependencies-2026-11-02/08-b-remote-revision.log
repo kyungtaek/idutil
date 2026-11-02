@@ -1,0 +1,195 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace MixedCache.xcworkspace -scheme MixedCacheProbe -configuration Debug -destination platform=macOS,arch=arm64 -derivedDataPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac -packageCachePath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/packages -clonedSourcePackagesDirPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages -showBuildTimingSummary build CODE_SIGNING_ALLOWED=NO ARCHS=arm64 ONLY_ACTIVE_ARCH=YES COMPILATION_CACHE_ENABLE_CACHING=YES COMPILATION_CACHE_ENABLE_DIAGNOSTIC_REMARKS=YES COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex
+
+Build settings from command line:
+    ARCHS = arm64
+    CODE_SIGNING_ALLOWED = NO
+    COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex
+    COMPILATION_CACHE_ENABLE_CACHING = YES
+    COMPILATION_CACHE_ENABLE_DIAGNOSTIC_REMARKS = YES
+    ONLY_ACTIVE_ARCH = YES
+
+Resolve Package Graph
+
+Updating from /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/RemoteFeature
+
+Checking out 8d4fbff13aa459fc808634746eb293c5be7df2e1 of package ‘RemoteFeature’
+
+
+Resolved source packages:
+  LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/LocalFeature
+  RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/RemoteFeature @ 8d4fbff
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (8 targets)
+    Target 'MixedCacheProbe' in project 'MixedCache'
+        ➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'LocalFeature-product' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature_LocalFeature' in project 'LocalFeature' (no dependencies)
+    Target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+    Target 'RemoteFeature' in project 'RemoteFeature' (no dependencies)
+    Target 'Pods-MixedCacheProbe' in project 'Pods'
+        ➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+    Target 'PodFeature-macOS' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 9005a9b8678dcb7170ea5a61ca77efa6
+Build description path: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/XCBuildData/9005a9b8678dcb7170ea5a61ca77efa6.xcbuilddata
+ValidateCAS /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/llvm-cas
+validation skipped
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist (in target 'LocalFeature_LocalFeature' from project 'LocalFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/LocalFeature
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+note: Removed stale file '/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-317EC3B2531AD281C0D133D3.sh'
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist
+
+SwiftDriver RemoteFeature normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RemoteFeature -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos12.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name remotefeature -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_const_extract_protocols.json -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b -experimental-emit-module-separately -disable-cmo
+
+WriteAuxiliaryFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-D9967E5F22D33B0175761BC6.sh (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    write-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-D9967E5F22D33B0175761BC6.sh
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist (in target 'Pods-MixedCacheProbe' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist
+
+SwiftCompile normal arm64 Compiling\ RemoteFeature.swift /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages/checkouts/RemoteFeature/Sources/RemoteFeature/RemoteFeature.swift (in target 'RemoteFeature' from project 'RemoteFeature')
+note: Local cache miss for key: llvmcas://55de9413b6e200e9755a51f6af346a9082d335d7ba31417592cc2e6bf1dbfb8b (in target 'RemoteFeature' from project 'RemoteFeature')
+note: Replay cache miss (in target 'RemoteFeature' from project 'RemoteFeature')
+
+SwiftCompile normal arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages/checkouts/RemoteFeature/Sources/RemoteFeature/RemoteFeature.swift (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-SwiftPerFileCompile RemoteFeature.swift
+
+Cache miss
+SwiftEmitModule normal arm64 Emitting\ module\ for\ RemoteFeature (in target 'RemoteFeature' from project 'RemoteFeature')
+note: Local cache miss for key: llvmcas://81af413e4355529021d3812685bb91f675998b57499218b016e969ae731b4375 (in target 'RemoteFeature' from project 'RemoteFeature')
+note: Replay cache miss (in target 'RemoteFeature' from project 'RemoteFeature')
+Cache miss
+
+SwiftCompile normal arm64 (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    
+
+SwiftCachingPruneData /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for RemoteFeature (in target 'RemoteFeature' from project 'RemoteFeature')
+
+SwiftDriver\ Compilation\ Requirements RemoteFeature normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RemoteFeature -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos12.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name remotefeature -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_const_extract_protocols.json -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.swiftmodule/arm64-apple-macos.abi.json /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.abi.json (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages/checkouts/RemoteFeature
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.abi.json /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.swiftmodule/arm64-apple-macos.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling RemoteFeature.swift (in target 'RemoteFeature' from project 'RemoteFeature')
+
+SwiftDriver\ Compilation RemoteFeature normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RemoteFeature -Onone @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos12.0 -g -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -output-file-map /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex -sdk-module-cache-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKExplicitPrecompiledModules -cache-compile-job -cas-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin -emit-dependencies -emit-module -emit-module-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name remotefeature -emit-const-values -const-gather-protocols-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_const_extract_protocols.json -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/include -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources/arm64 -Xcc -I/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.o normal (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages/checkouts/RemoteFeature
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos12.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -w -Xlinker -no_warn_duplicate_libraries -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.swiftmodule -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.o
+
+ExtractAppIntentsMetadata (in target 'RemoteFeature' from project 'RemoteFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages/checkouts/RemoteFeature
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain --module-name RemoteFeature --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 12.0 --bundle-identifier remotefeature.RemoteFeature --output /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.appintents --target-triple arm64-apple-macos12.0 --binary-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/RemoteFeature.o --dependency-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature_dependency_info.dat --stringsdata-file /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.SwiftFileList --metadata-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/RemoteFeature.DependencyMetadataFileList --static-metadata-file-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/RemoteFeature.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/RemoteFeature.build/Debug/RemoteFeature-t.build/Objects-normal/arm64/RemoteFeature.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-02 10:28:14.182 appintentsmetadataprocessor[22686:52867770] Starting appintentsmetadataprocessor export
+2026-11-02 10:28:14.218 appintentsmetadataprocessor[22686:52867770] Extracted no relevant App Intents symbols, skipping writing output
+
+PhaseScriptExecution [CP]\ Check\ Pods\ Manifest.lock /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-D9967E5F22D33B0175761BC6.sh (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    /bin/sh -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-D9967E5F22D33B0175761BC6.sh
+
+Ld /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe normal (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PackageFrameworks -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS -FVendor -filelist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe.swiftmodule -ObjC -framework PodFeature -framework BinaryFeature -framework Pods_MixedCacheProbe -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe
+
+RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe
+
+CompilationCacheMetrics
+note: 0 hits / 2 cacheable tasks (0%)
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Build Timing Summary
+
+Ld (2 tasks) | 0.159 seconds
+
+SwiftDriver (1 task) | 0.067 seconds
+
+PhaseScriptExecution (1 task) | 0.065 seconds
+
+ExtractAppIntentsMetadata (1 task) | 0.050 seconds
+
+SwiftCompile (1 task) | 0.043 seconds
+
+SwiftEmitModule (1 task) | 0.039 seconds
+
+RegisterExecutionPolicyException (1 task) | 0.011 seconds
+
+ProcessInfoPlistFile (3 tasks) | 0.009 seconds
+
+Copy (1 task) | 0.002 seconds
+
+WriteAuxiliaryFile (1 task) | 0.000 seconds
+
+SwiftDriver Compilation Requirements (1 task) | 0.000 seconds
+
+SwiftDriver Compilation (1 task) | 0.000 seconds
+
+** BUILD SUCCEEDED **
+

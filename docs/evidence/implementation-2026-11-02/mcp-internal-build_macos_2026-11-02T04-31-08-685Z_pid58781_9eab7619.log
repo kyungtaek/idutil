@@ -1,0 +1,96 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace -scheme MixedCacheProbe -configuration Debug -skipMacroValidation -destination platform=macOS,arch=arm64 -collect-test-diagnostics never -derivedDataPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData -clonedSourcePackagesDirPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages COMPILATION_CACHE_ENABLE_CACHING=YES COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS CODE_SIGNING_ALLOWED=NO ARCHS=arm64 build
+
+Build settings from command line:
+    ARCHS = arm64
+    CODE_SIGNING_ALLOWED = NO
+    COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS
+    COMPILATION_CACHE_ENABLE_CACHING = YES
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/RemoteFeature @ e811637
+  LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Dependencies/LocalFeature
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (8 targets)
+    Target 'MixedCacheProbe' in project 'MixedCache'
+        ➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'LocalFeature-product' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature_LocalFeature' in project 'LocalFeature' (no dependencies)
+    Target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+    Target 'RemoteFeature' in project 'RemoteFeature' (no dependencies)
+    Target 'Pods-MixedCacheProbe' in project 'Pods'
+        ➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+    Target 'PodFeature-macOS' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 1b4ba4067907e85e4c58793d68bba502
+Build description path: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/XCBuildData/1b4ba4067907e85e4c58793d68bba502.xcbuilddata
+ValidateCAS /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/llvm-cas
+validation skipped
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist (in target 'LocalFeature_LocalFeature' from project 'LocalFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Dependencies/LocalFeature
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist
+
+ProcessInfoPlistFile /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist (in target 'Pods-MixedCacheProbe' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist
+
+PhaseScriptExecution [CP]\ Check\ Pods\ Manifest.lock /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-00C00BC2FE737045384C2AE0.sh (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a
+    /bin/sh -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Script-00C00BC2FE737045384C2AE0.sh
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

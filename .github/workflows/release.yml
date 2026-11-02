@@ -1,0 +1,83 @@
+name: Release macOS binaries
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag to build and release
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x86_64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate tag and architecture
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+          EXPECTED_ARCH: ${{ matrix.arch }}
+        run: |
+          test "$(uname -m)" = "$EXPECTED_ARCH"
+          python -c 'import os, tomllib; assert os.environ["RELEASE_TAG"] == "v" + tomllib.load(open("pyproject.toml", "rb"))["project"]["version"]'
+      - name: Install build and test dependencies
+        run: |
+          python -m pip install . -r packaging/requirements-build.txt
+          HOMEBREW_NO_AUTO_UPDATE=1 brew install worktrunk
+      - name: Unit and Worktrunk tests
+        run: IDUTIL_TEST_WT="$(command -v wt)" python -m unittest discover -s tests -v
+      - name: Build executable
+        run: IDUTIL_BUILD_PYTHON="$(command -v python)" scripts/build-binary.sh
+      - name: Verify standalone executable and durable hooks
+        run: python scripts/verify_binary.py --binary dist/binary/idutil --report dist/release/verification-${{ matrix.arch }}.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binary-${{ matrix.arch }}
+          path: dist/release/*
+          if-no-files-found: error
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: binary-*
+          merge-multiple: true
+          path: dist/release
+      - name: Prepare checksums and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp scripts/install.sh dist/release/install.sh
+          (cd dist/release && sha256sum *.tar.gz install.sh > SHA256SUMS)
+          # Publish only after both architecture builds and their checks pass.
+          gh release create "$RELEASE_TAG" dist/release/* --verify-tag \
+            --title "idutil $RELEASE_TAG" --notes-file packaging/RELEASE_NOTES.md

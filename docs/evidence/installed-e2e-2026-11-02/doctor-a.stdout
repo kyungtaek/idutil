@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "observedAt": 1793595363.9231749,
+  "resources": [
+    {
+      "id": "567ad2956f394e629c4ad401d3292d16",
+      "profile": "default",
+      "generation": 1,
+      "status": "active",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "presence": "present"
+    },
+    {
+      "id": "d2f25cb58e1548fbb16950971153ac5d",
+      "profile": "ios",
+      "generation": 1,
+      "status": "active",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/d2f25cb58e1548fbb16950971153ac5d",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "presence": "present"
+    }
+  ],
+  "sharedCaches": {},
+  "buildContext": {
+    "schemaVersion": 1,
+    "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+    "worktreeId": "9e689b24db5c512444f4b182",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+    "resourceId": "567ad2956f394e629c4ad401d3292d16",
+    "generation": 1,
+    "profile": "default",
+    "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+    "sourcePackagesPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+    "artifactsPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/Artifacts",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=NO"
+    ],
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "mcpSessionDefaults": {
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'/MixedCache.xcworkspace",
+      "scheme": "MixedCacheProbe",
+      "derivedDataPath": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ]
+    },
+    "clearMCPDefault": "projectPath",
+    "cacheMode": "private-only",
+    "cacheConnections": {
+      "compilation": null,
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "adapterSupport": {
+      "xcodebuild": "build/test with explicit managed paths",
+      "xcodebuildmcp": {
+        "verifiedVersion": "2.7.0",
+        "verifiedAction": "build_macos",
+        "testAction": "use xcodebuild test; 2.7.0 drops derivedDataPath in test-without-building",
+        "externalArtifacts": "MCP logs/results remain tool-owned; excluded from idutil GC",
+        "otherVersionsAndActions": "require verification"
+      },
+      "xcodeGUI": "not verified"
+    },
+    "configurationEvidence": "unknown",
+    "usageEvidence": "unknown"
+  },
+  "configurationEvidence": "unknown",
+  "usageEvidence": "unknown",
+  "inputEvidence": {
+    "observedAt": 1793595363.9518862,
+    "inputs": {
+      "Dependencies": {
+        "state": "observed",
+        "sha256": "436f15bb14a38b15864c9f0becf0c6cc6be77c55ebb3f1f619a090aa12862b48"
+      },
+      "Gemfile.lock": {
+        "state": "observed",
+        "sha256": "97746897690e723079a9a9f186837aeb8ce9b8efaa16a01e9fa27d4c54515ee6"
+      },
+      "MixedCache.xcworkspace/contents.xcworkspacedata": {
+        "state": "observed",
+        "sha256": "14fa0c8340f0f5adcc8288bf3c007dc02db1b60452317bf6cba54c22829a18e0"
+      },
+      "MixedCache.xcworkspace/xcshareddata/swiftpm/Package.resolved": {
+        "state": "observed",
+        "sha256": "237e30b6afafa919c22d91f07cc7194d480e09706b31112ca2965797d75c8bc7"
+      },
+      "Podfile": {
+        "state": "observed",
+        "sha256": "722aba8b1811ec5c21ebae5944f4ede3debe99a49dc6fe3d9d0968ebfceb7f09"
+      },
+      "Podfile.lock": {
+        "state": "observed",
+        "sha256": "f8c7975fa074b09d83ef8baa9a2d52511508abd0a832211b77bfbcfa2f346b56"
+      },
+      "Vendor": {
+        "state": "observed",
+        "sha256": "83227cf1ded5d03b40d402746085db53eabd8b6e9812e9ee2aafe290c3043e79"
+      }
+    },
+    "completeDependencyGraph": false
+  },
+  "hookApproval": "not-inferred; inspect Worktrunk trust settings",
+  "buildSettingsEvidence": {
+    "checkedPaths": 4,
+    "scope": "settings snapshot; actual build output still needs verification"
+  },
+  "findings": [
+    {
+      "code": "declared-input-changed",
+      "message": "Re-run prepare; declared local/binary inputs changed"
+    }
+  ],
+  "result": "attention"
+}

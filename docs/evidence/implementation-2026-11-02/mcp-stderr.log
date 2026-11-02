@@ -1,0 +1,41 @@
+[2026-11-02T04:31:08.552Z] [INFO] Server initialized (version 2.7.0)
+[2026-11-02T04:31:08.553Z] [INFO] No project config found (cwd: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a).
+[2026-11-02T04:31:08.553Z] [INFO] 🚀 Initializing server...
+[2026-11-02T04:31:08.633Z] [INFO] Registered 17 tools from workflows: macos, session-management
+[2026-11-02T04:31:08.653Z] [INFO] Loaded resource: devices (xcodebuildmcp://devices)
+[2026-11-02T04:31:08.655Z] [INFO] Loaded resource: doctor (xcodebuildmcp://doctor)
+[2026-11-02T04:31:08.656Z] [INFO] Loaded resource: session-status (xcodebuildmcp://session-status)
+[2026-11-02T04:31:08.656Z] [INFO] Loaded resource: simulators (xcodebuildmcp://simulators)
+[2026-11-02T04:31:08.656Z] [INFO] Skipped resource 'xcode-ide-state' (hidden by predicates)
+[2026-11-02T04:31:08.656Z] [INFO] Registered resource: devices at xcodebuildmcp://devices
+[2026-11-02T04:31:08.656Z] [INFO] Registered resource: doctor at xcodebuildmcp://doctor
+[2026-11-02T04:31:08.656Z] [INFO] Registered resource: session-status at xcodebuildmcp://session-status
+[2026-11-02T04:31:08.656Z] [INFO] Registered resource: simulators at xcodebuildmcp://simulators
+[2026-11-02T04:31:08.656Z] [INFO] Registered 4 resources
+[2026-11-02T04:31:08.656Z] [INFO] MCP idle shutdown disabled
+[2026-11-02T04:31:08.657Z] [INFO] XcodeBuildMCP Server running on stdio
+[2026-11-02T04:31:08.658Z] [INFO] XcodeBuildMCP server (version 2.7.0) started successfully
+[2026-11-02T04:31:08.680Z] [INFO] [Session] Defaults cleared (global): projectPath
+[2026-11-02T04:31:08.680Z] [INFO] [Session] Defaults updated (global): workspacePath, scheme, configuration, arch, derivedDataPath, preferXcodebuild, extraArgs
+[2026-11-02T04:31:08.685Z] [INFO] Starting macOS build for scheme MixedCacheProbe
+[2026-11-02T04:31:08.686Z] [INFO] Starting macOS Build build for scheme MixedCacheProbe
+[2026-11-02T04:31:08.711Z] [INFO] [mcp-lifecycle] start {"pid":58781,"ppid":57740,"orphaned":false,"phase":"running","shutdownReason":null,"uptimeMs":165,"rssBytes":145801216,"heapUsedBytes":44826040,"watcherRunning":false,"watchedPath":null,"activeOperationCount":0,"activeOperationByCategory":{},"debuggerSessionCount":0,"simulatorLaunchOsLogSessionCount":0,"ownedSimulatorLaunchOsLogSessionCount":0,"videoCaptureSessionCount":0,"swiftPackageProcessCount":0,"matchingMcpProcessCount":1,"matchingMcpPeerSummary":[],"anomalies":[]}
+[2026-11-02T04:31:10.601Z] [INFO] macOS Build build succeeded.
+[2026-11-02T04:31:11.372Z] [INFO] [Pipeline] 29 unrecognized parser lines written to /Users/kent/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/build_macos_parser-debug_2026-11-02T04-31-11-372Z_pid58781_1cf80d0c.log
+[2026-11-02T04:31:11.385Z] [INFO] [Session] Defaults cleared (global): projectPath
+[2026-11-02T04:31:11.386Z] [INFO] [Session] Defaults updated (global): workspacePath, scheme, configuration, arch, derivedDataPath, preferXcodebuild, extraArgs
+[2026-11-02T04:31:11.388Z] [INFO] Starting macOS build for scheme MixedCacheProbe
+[2026-11-02T04:31:11.389Z] [INFO] Starting macOS Build build for scheme MixedCacheProbe
+[2026-11-02T04:31:12.811Z] [INFO] macOS Build build succeeded.
+[2026-11-02T04:31:13.569Z] [INFO] [Pipeline] 28 unrecognized parser lines written to /Users/kent/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/build_macos_parser-debug_2026-11-02T04-31-13-569Z_pid58781_85ba1e00.log
+[2026-11-02T04:31:13.582Z] [INFO] [Session] Defaults cleared (global): projectPath
+[2026-11-02T04:31:13.582Z] [INFO] [Session] Defaults updated (global): workspacePath, scheme, configuration, arch, derivedDataPath, preferXcodebuild, extraArgs
+[2026-11-02T04:31:13.585Z] [INFO] Starting macOS build for scheme MixedCacheProbe
+[2026-11-02T04:31:13.585Z] [INFO] Starting macOS Build build for scheme MixedCacheProbe
+[2026-11-02T04:31:14.506Z] [INFO] macOS Build build succeeded.
+[2026-11-02T04:31:15.264Z] [INFO] [Pipeline] 28 unrecognized parser lines written to /Users/kent/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/build_macos_parser-debug_2026-11-02T04-31-15-264Z_pid58781_43ae03f2.log
+[2026-11-02T04:31:15.278Z] [INFO] Starting test run for scheme MixedCacheProbe on platform macOS (executor)
+[2026-11-02T04:31:15.279Z] [INFO] Starting Test Run build-for-testing for scheme MixedCacheProbe
+[2026-11-02T04:31:16.599Z] [INFO] Test Run build-for-testing succeeded.
+[2026-11-02T04:31:18.028Z] [INFO] [Pipeline] 56 unrecognized parser lines written to /Users/kent/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/test_macos_parser-debug_2026-11-02T04-31-18-028Z_pid58781_028c38d4.log
+[2026-11-02T04:31:18.149Z] [INFO] MCP shutdown requested: sigterm

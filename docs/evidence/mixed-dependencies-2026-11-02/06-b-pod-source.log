@@ -1,0 +1,165 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace MixedCache.xcworkspace -scheme MixedCacheProbe -configuration Debug -destination platform=macOS,arch=arm64 -derivedDataPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac -packageCachePath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/packages -clonedSourcePackagesDirPath /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SourcePackages -showBuildTimingSummary build CODE_SIGNING_ALLOWED=NO ARCHS=arm64 ONLY_ACTIVE_ARCH=YES COMPILATION_CACHE_ENABLE_CACHING=YES COMPILATION_CACHE_ENABLE_DIAGNOSTIC_REMARKS=YES COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex
+
+Build settings from command line:
+    ARCHS = arm64
+    CODE_SIGNING_ALLOWED = NO
+    COMPILATION_CACHE_CAS_PATH = /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex
+    COMPILATION_CACHE_ENABLE_CACHING = YES
+    COMPILATION_CACHE_ENABLE_DIAGNOSTIC_REMARKS = YES
+    ONLY_ACTIVE_ARCH = YES
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/RemoteFeature @ ba55f15
+  LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/LocalFeature
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (8 targets)
+    Target 'MixedCacheProbe' in project 'MixedCache'
+        ➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'LocalFeature-product' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature_LocalFeature' in project 'LocalFeature' (no dependencies)
+    Target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+    Target 'RemoteFeature' in project 'RemoteFeature' (no dependencies)
+    Target 'Pods-MixedCacheProbe' in project 'Pods'
+        ➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+    Target 'PodFeature-macOS' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ValidateCAS /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/llvm-cas
+validation skipped
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+ScanDependencies /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/PodFeature/Sources/PodFeature.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods
+    
+    Using response file: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o.scan -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -target arm64-apple-macos14.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Index.noindex/DataStore @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -include /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-prefix.pch -MMD -MT dependencies -MF /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.d --serialize-diagnostics /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.dia -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/PodFeature/Sources/PodFeature.m -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o -index-unit-output-path /Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o -Xclang -fcas-backend -mllvm -cas-friendly-debug-info
+
+CompileC /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/PodFeature/Sources/PodFeature.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods
+    
+    Using response file: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -target arm64-apple-macos14.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability -index-store-path /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Index.noindex/DataStore @/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -include /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-prefix.pch -MMD -MT dependencies -MF /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.d --serialize-diagnostics /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.dia -c /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Dependencies/PodFeature/Sources/PodFeature.m -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o -index-unit-output-path /Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.o -Xclang -fcas-backend -mllvm -cas-friendly-debug-info
+note: cache miss: llvmcas://7cd087f1f9ad2c0ffbeb728d2433f86f161a2a52d00b9190bbb78017bd5453e1 (in target 'PodFeature-macOS' from project 'Pods')
+Cache miss
+
+ClangCachingPruneData /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/cache/xcode27/CompilationCache.noindex/builtin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib
+
+Libtool /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/PodFeature normal (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b/Pods
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS -filelist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature.LinkFileList -dependency_info /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/Pods.build/Debug/PodFeature-macOS.build/Objects-normal/arm64/PodFeature_libtool_dependency_info.dat -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/PodFeature
+
+Ld /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe normal (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PackageFrameworks -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug -F/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PodFeature-macOS -FVendor -filelist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheProbe.build/Objects-normal/arm64/MixedCacheProbe.swiftmodule -ObjC -framework PodFeature -framework BinaryFeature -framework Pods_MixedCacheProbe -o /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe
+
+RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe (in target 'MixedCacheProbe' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/worktree-b
+    builtin-RegisterExecutionPolicyException /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Products/Debug/MixedCacheProbe
+
+GenerateClangModulesReport
+AppKit: 1 variant
+ApplicationServices: 1 variant
+CFNetwork: 1 variant
+CUPS: 1 variant
+CloudKit: 1 variant
+Cocoa: 1 variant
+ColorSync: 1 variant
+CoreData: 1 variant
+CoreFoundation: 1 variant
+CoreGraphics: 1 variant
+CoreImage: 1 variant
+CoreLocation: 1 variant
+CoreServices: 1 variant
+CoreText: 1 variant
+CoreVideo: 1 variant
+Darwin: 1 variant
+DiskArbitration: 1 variant
+Dispatch: 1 variant
+Foundation: 1 variant
+IOKit: 1 variant
+IOSurface: 1 variant
+ImageIO: 1 variant
+MachO: 1 variant
+Metal: 1 variant
+ObjectiveC: 1 variant
+OpenGL: 1 variant
+QuartzCore: 1 variant
+Security: 1 variant
+Symbols: 1 variant
+XPC: 1 variant
+_AvailabilityInternal: 1 variant
+_Builtin_float: 1 variant
+_Builtin_inttypes: 1 variant
+_Builtin_limits: 1 variant
+_Builtin_stdarg: 1 variant
+_Builtin_stdbool: 1 variant
+_Builtin_stddef: 1 variant
+_Builtin_stdint: 1 variant
+_DarwinFoundation1: 1 variant
+_DarwinFoundation2: 1 variant
+_DarwinFoundation3: 1 variant
+_LocationEssentials: 1 variant
+launch: 1 variant
+libDER: 1 variant
+libkern: 1 variant
+os_object: 1 variant
+os_workgroup: 1 variant
+ptrauth: 1 variant
+ptrcheck: 1 variant
+
+Full report written to '/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/XCBuildData/clangmodulesreport'
+CompilationCacheMetrics
+note: 0 hits / 1 cacheable task (0%)
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/derived/worktree-b-mac/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Build Timing Summary
+
+Ld (1 task) | 0.154 seconds
+
+ScanDependencies (1 task) | 0.049 seconds
+
+CompileC (1 task) | 0.023 seconds
+
+RegisterExecutionPolicyException (1 task) | 0.011 seconds
+
+Libtool (1 task) | 0.006 seconds
+
+** BUILD SUCCEEDED **
+

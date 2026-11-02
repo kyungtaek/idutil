@@ -1,0 +1,4 @@
+{
+  "scripts/e2e_installed.py": "b88645230af413fda173a76a245c5b0d76eba381d0ae2a4f04d0cc55338a5b0b",
+  "note": "Post-resolution reuse checks were added to the script after the initial run and additionally verified on retained B; A had already been removed."
+}

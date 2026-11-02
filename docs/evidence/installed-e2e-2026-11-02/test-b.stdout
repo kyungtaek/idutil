@@ -1,0 +1,390 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/MixedCache.xcworkspace -scheme MixedCacheProbe -derivedDataPath "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData" -clonedSourcePackagesDirPath "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/SourcePackages" COMPILATION_CACHE_ENABLE_CACHING=NO -configuration Debug -destination platform=macOS,arch=arm64 ARCHS=arm64 CODE_SIGNING_ALLOWED=NO DEBUG_INFORMATION_FORMAT=dwarf test
+
+Build settings from command line:
+    ARCHS = arm64
+    CODE_SIGNING_ALLOWED = NO
+    COMPILATION_CACHE_ENABLE_CACHING = NO
+    DEBUG_INFORMATION_FORMAT = dwarf
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RemoteFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/RemoteFeature @ 76cea4a
+  LocalFeature: /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Dependencies/LocalFeature
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (9 targets)
+    Target 'MixedCacheTests' in project 'MixedCache'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'MixedCacheProbe' in project 'MixedCache'
+        ➜ Implicit dependency on target 'Pods-MixedCacheProbe' in project 'Pods' via file 'Pods_MixedCacheProbe.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PodFeature-macOS' in project 'Pods' via options '-framework PodFeature' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'LocalFeature-product' in project 'LocalFeature'
+    Target 'LocalFeature-product' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature' in project 'LocalFeature'
+        ➜ Explicit dependency on target 'LocalFeature_LocalFeature' in project 'LocalFeature'
+    Target 'LocalFeature_LocalFeature' in project 'LocalFeature' (no dependencies)
+    Target 'RemoteFeature-product' in project 'RemoteFeature'
+        ➜ Explicit dependency on target 'RemoteFeature' in project 'RemoteFeature'
+    Target 'RemoteFeature' in project 'RemoteFeature' (no dependencies)
+    Target 'Pods-MixedCacheProbe' in project 'Pods'
+        ➜ Explicit dependency on target 'PodFeature-macOS' in project 'Pods'
+    Target 'PodFeature-macOS' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: e4e3d48f32b51e5ad7ab968402ab73dc
+Build description path: /Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/XCBuildData/e4e3d48f32b51e5ad7ab968402ab73dc.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+ProcessInfoPlistFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist (in target 'LocalFeature_LocalFeature' from project 'LocalFeature')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Dependencies/LocalFeature
+    builtin-infoPlistUtility /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/LocalFeature.build/Debug/LocalFeature_LocalFeature-b.build/empty-LocalFeature_LocalFeature.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle/Contents/Info.plist
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.hmap
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    write-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap
+
+ProcessInfoPlistFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist (in target 'PodFeature-macOS' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods/Target\ Support\ Files/PodFeature-macOS/PodFeature-macOS-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PodFeature-macOS/PodFeature.framework/Versions/A/Resources/Info.plist
+
+MkDir /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /bin/mkdir -p /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources
+
+MkDir /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /bin/mkdir -p /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS
+
+MkDir /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /bin/mkdir -p /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents
+
+MkDir /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /bin/mkdir -p /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+ProcessInfoPlistFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist (in target 'Pods-MixedCacheProbe' from project 'Pods')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods
+    builtin-infoPlistUtility /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Pods/Target\ Support\ Files/Pods-MixedCacheProbe/Pods-MixedCacheProbe-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/Pods_MixedCacheProbe.framework/Versions/A/Resources/Info.plist
+
+Copy /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources/LocalFeature_LocalFeature.bundle /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/LocalFeature_LocalFeature.bundle /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources
+
+SwiftDriver MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Info.plist /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-infoPlistUtility /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/empty-MixedCacheTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -scanforprivacyfile /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources/LocalFeature_LocalFeature.bundle -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/DeveloperToolsSupport-993UAFPCI7ZG6SWTF5TNYTZ5H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/SwiftShims-4ISGSN4T3MPBXFNMN3MV9DDUG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ptrauth-2BU729C9RA0GHRETE0OKITQSO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_AvailabilityInternal-3T7NU44S0EAJ374Y9E672JSXI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_float-5TAKXDJYPWQQYYJFLZ1HTNOWC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stddef-CHERCVKOTP77M1RHOX92LDKTX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ptrcheck-ASPB98RDPP1BZ4AVCHK7NHHKK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdbool-10UX6WORD7FUACASRNNL07WNC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-6V6XTCQ1J0GGYQ578YBCE7MV5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdarg-1LQIK1P8VFUZT9F0OVXLRWCPQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation1-5J33YHWYUF7QL8DLP5ZCEY9TQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_limits-8PDGS5TSGA1FFGIC5GL10QOZT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation2-6W9PZ47BKRMYDZB4LUDO7POX2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdint-9IY7CD7GA7KDVDYHY3U5J0896.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/sys_types-C2NH6XRS5FGJSL7RY9H56M2X4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/string_h-B0HNYB4IQ4K6MYWSKUVNFHN2F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_tgmath-E0X1KRYMLUD6WOHYDU11FZS7C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_intrinsics-BGPACY25J0T2L9QV5D0A11FNP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/libDER-A4XX7H8PHVETQTM580W7DVJGU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation3-BPVRIH7WOWI5RQRIA2HN0GGPA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdatomic-3MG9I93HAU02AUSZ72NLXU4FH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/_Builtin_inttypes-DAG17JDLKPILMLVGQOWD2327I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Darwin-EX6TKM0LE14CG52GJ8AGCJCG9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/simd-1RWNAHJFD1N5KQ957O7IA1KMC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/launch-48H839R75DQ5WN34QSSJ52G1C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/libkern-6XGC57YGTR1K334BJN4U3HSVS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/MachO-BYVDVB01W6AA6000ZNWOP2GXQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CUPS-97PGYPAG1GW384P29UEVP5WWA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Spatial-45WYI6SH9W17J0BTXH9UAQXS0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ObjectiveC-C0X1KQDWCZM6SXV8VMVZ6NEZU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/os_object-EADT1U1CGAY49YHLRET32R8I6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/os_workgroup-C4ZGPOKHBQEO1A8K2HBH2S8R0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Dispatch-AG8DPVV1Y4RB54DQYABX8R1MB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/XPC-5ORTU6Y5Z5E8P837AGN41UE4T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreFoundation-B8KS6Z56MF7EIFRI18XCIF2D0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/os-98BW4HCDGAMHR2NZ0T8NHIUJ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CFNetwork-92TGHM6HCYK9H1LKFPST4LRQ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ColorSync-5KJVKGHPSP35KVIM6ZVY5QHW7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/IOKit-CIAAHYYTRR7XK7FTLH09EJA7I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Security-AOV91W4VCNWSCGP0VKJZ2HHMK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreGraphics-9D7CE3I7YFS8KEYTZADY74AGC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/DiskArbitration-36D3NN2MHY0S8ME7DXAGTRIAQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreServices-BL51UDQW9YOIOMYDC7LHZ478S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreText-A9QZJMH6COPO6TBVO6Z4YH72C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ImageIO-74N503IV4XYSZBG2I2H6UDKXX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Foundation-AZ3SSQQJT4WRFG65KMCDQT7R1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/DataDetection-91OKR83XYBZ064S0C51RX920K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/IOSurface-A9IIN1910N0LEX8HHDW5VRGJF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Symbols-CFWF9GNNASTGO9CPKN7C5ZVI7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreTransferable-4XRA550PRD3CAS5ZR5RNSQCPJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreData-A6K9LDJIS8CC89MFW6YUGUXBW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-DGC58QNQUQUUCSWIXF95N4XN6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/ApplicationServices-2FFM3TKWHEDYO8HAXVSVRRFT7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Accessibility-DWTX156P5SGGDQMTV4EYF0ITB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/OSLog-7PF0ZIU08NBOOUDFJMK5HJ64.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/OpenGL-3RNGT4N4LJM3UG0UWSIEQAH67.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/Metal-D298IKDSRA13424Y30QLS9H7E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreVideo-EDXVCM7RNMY7MECEMSJ794SHZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/QuartzCore-AU63D8S7LF5RHWHL88547QPPL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/CoreImage-6EM3XATZYBBM1FX6USYDWN6WQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/SwiftUICore-3TOE0XKCZ6LMORGMYS9OBZAF3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules/AppKit-ERE5QX715BASSPD3G2JH8LS7J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-EB234NKE701P25FUFSRJD9V5X.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-1CUEG3NUP5M2C.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-4TIMCX8I92UCYFIDZ463146QD.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-OAHE0LUVUPO1.swiftmodule
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MixedCacheTests (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftCompile normal arm64 (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    
+
+SwiftCompile normal arm64 Compiling\ CacheTests.swift /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Tests/CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftCompile normal arm64 /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b/Tests/CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-SwiftPerFileCompile CacheTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MixedCacheTests (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftDriver\ Compilation\ Requirements MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftdoc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftdoc (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftdoc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.abi.json /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.abi.json (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.abi.json /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftmodule /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/arm64-apple-macos.swiftmodule
+
+SwiftMergeGeneratedHeaders /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/MixedCacheTests-Swift.h /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-swiftHeaderTool -arch arm64 /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/MixedCacheTests-Swift.h
+
+Copy /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftsourceinfo (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftsourceinfo /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CacheTests.swift (in target 'MixedCacheTests' from project 'MixedCache')
+
+SwiftDriver\ Compilation MixedCacheTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixedCacheTests -Onone @/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -parse-as-library -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-generated-files.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-own-target-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCache-c0cf1b3474942af88e16e37a413bcf3c-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests-project-headers.hmap -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/include -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources/arm64 -Xcc -I/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests-Swift.h -working-directory /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests normal (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PackageFrameworks -F/Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests
+
+CopySwiftLibs /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests --scan-folder /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Frameworks --scan-folder /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/PlugIns --scan-folder /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Library/SystemExtensions --scan-folder /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Extensions --platform macosx --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.MrETyM/Metal.xctoolchain --module-name MixedCacheTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 14.0 --output /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/Resources --target-triple arm64-apple-macos14.0 --binary-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest/Contents/MacOS/MixedCacheTests --dependency-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests_dependency_info.dat --stringsdata-file /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftFileList --metadata-file-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyMetadataFileList --static-metadata-file-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/MixedCacheTests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/MixedCache.build/Debug/MixedCacheTests.build/Objects-normal/arm64/MixedCacheTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-02 13:56:18.390 appintentsmetadataprocessor[70140:53495908] Starting appintentsmetadataprocessor export
+2026-11-02 13:56:18.392 appintentsmetadataprocessor[70140:53495908] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+RegisterExecutionPolicyException /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    builtin-RegisterExecutionPolicyException /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+Touch /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest (in target 'MixedCacheTests' from project 'MixedCache')
+    cd /Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b
+    /usr/bin/touch -c /Users/kent/Library/Application\ Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Products/Debug/MixedCacheTests.xctest
+
+PruneExplicitPrecompiledModules /Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Test Suite 'All tests' started at 2026-11-02 13:56:19.391.
+Test Suite 'MixedCacheTests.xctest' started at 2026-11-02 13:56:19.391.
+Test Suite 'CacheTests' started at 2026-11-02 13:56:19.391.
+Test Case '-[MixedCacheTests.CacheTests testValue]' started.
+Test Case '-[MixedCacheTests.CacheTests testValue]' passed (0.002 seconds).
+Test Suite 'CacheTests' passed at 2026-11-02 13:56:19.394.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'MixedCacheTests.xctest' passed at 2026-11-02 13:56:19.394.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'All tests' passed at 2026-11-02 13:56:19.394.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+
+Test session results, code coverage, and logs:
+	/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc/DerivedData/Logs/Test/Test-MixedCacheProbe-2026.11.02_13-56-14-+0900.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

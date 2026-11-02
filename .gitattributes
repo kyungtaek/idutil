@@ -1,0 +1,2 @@
+# Preserve captured diagnostic output verbatim, including tool-emitted whitespace.
+docs/evidence/** -whitespace

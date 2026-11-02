@@ -1,0 +1,31 @@
+{
+  "content": [
+    {
+      "text": "\n\ud83d\udd28 Build\n\n\u2705 Build succeeded. (\u23f1\ufe0f 2.2s)\n  \u2514 Files:\n     \u2514\u2500\u2500 ~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/build_macos_2026-11-02T04-31-11-389Z_pid58781_1a6ca92b.log \u2014 Build Logs\n\nNext steps:\n1. Get built macOS app path: get_mac_app_path({ scheme: \"MixedCacheProbe\", derivedDataPath: \"/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData\" })\n",
+      "type": "text"
+    }
+  ],
+  "structuredContent": {
+    "data": {
+      "artifacts": {
+        "buildLogPath": "~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/build_macos_2026-11-02T04-31-11-389Z_pid58781_1a6ca92b.log"
+      },
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "summary": {
+        "durationMs": 2180,
+        "status": "SUCCEEDED",
+        "target": "macos"
+      }
+    },
+    "didError": false,
+    "error": null,
+    "nextSteps": [
+      "Get built macOS app path: get_mac_app_path({ scheme: \"MixedCacheProbe\", derivedDataPath: \"/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData\" })"
+    ],
+    "schema": "xcodebuildmcp.output.build-result",
+    "schemaVersion": "3"
+  }
+}

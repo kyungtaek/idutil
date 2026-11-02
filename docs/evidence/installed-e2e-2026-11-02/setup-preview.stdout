@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "result": "planned",
+  "repositoryId": "6dea6fea8ac71e4db4a7ccff",
+  "root": "/Users/kent/Library/Application Support/idutil",
+  "worktrunkVersion": "wt v0.81.0",
+  "worktrunkConfig": "/Users/kent/.config/worktrunk/config.toml",
+  "hookCommands": {
+    "pre-start": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook prepare --worktree {{ worktree_path }} --json",
+    "pre-remove": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook check-release --worktree {{ worktree_path }} --json",
+    "post-remove": "'/Users/kent/Library/Application Support/idutil/runtime/0.1.0-1e7c0bd41a1e/idutil-cli' --root '/Users/kent/Library/Application Support/idutil' _hook release --worktree {{ worktree_path }} --json"
+  },
+  "profile": {
+    "target": "MixedCache.xcworkspace",
+    "scheme": "MixedCacheProbe",
+    "inputs": [
+      "Dependencies",
+      "Vendor"
+    ],
+    "developerDir": "/Applications/Xcode.app/Contents/Developer",
+    "sharedCache": false,
+    "sharedCacheEpoch": null
+  },
+  "agentFiles": [
+    ".agents/skills/ios-disk-util/SKILL.md",
+    "AGENTS.md",
+    ".claude/skills/ios-disk-util/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "warnings": [],
+  "automaticGC": "deferred: external writer quiescence is not established by hooks"
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "observedAt": 1793595469.401448,
+  "resources": [
+    {
+      "id": "0b5237ea7511423b91d2c88c7b192cfc",
+      "profile": "default",
+      "generation": 1,
+      "status": "retired",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/0b5237ea7511423b91d2c88c7b192cfc",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+      "presence": "present",
+      "logicalBytes": 283401199,
+      "fingerprint": "053c2aa9f6e916ea8dee341c0c3ba108d060ccac8e5e399e4fab4119a27d2c6a",
+      "protected": [
+        "DerivedData/Logs/Test/Test-MixedCacheProbe-2026.11.02_13-56-14-+0900.xcresult"
+      ]
+    },
+    {
+      "id": "0e07df0b46dc44aa803e5a72111e31bd",
+      "profile": "ios",
+      "generation": 1,
+      "status": "deleted",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/0e07df0b46dc44aa803e5a72111e31bd",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+      "presence": "present",
+      "diagnostic": "Resource identity changed or missing"
+    },
+    {
+      "id": "567ad2956f394e629c4ad401d3292d16",
+      "profile": "default",
+      "generation": 1,
+      "status": "deleted",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/567ad2956f394e629c4ad401d3292d16",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "presence": "removed",
+      "diagnostic": "Resource identity changed or missing"
+    },
+    {
+      "id": "cb016b136b7a49f3a2ec1fa97d794778",
+      "profile": "default",
+      "generation": 2,
+      "status": "deleted",
+      "reason": "declared-input-changed",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/cb016b136b7a49f3a2ec1fa97d794778",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "presence": "removed",
+      "diagnostic": "Resource identity changed or missing"
+    },
+    {
+      "id": "d2f25cb58e1548fbb16950971153ac5d",
+      "profile": "ios",
+      "generation": 1,
+      "status": "deleted",
+      "reason": "prepare",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/d2f25cb58e1548fbb16950971153ac5d",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature a 'quoted'",
+      "presence": "removed",
+      "diagnostic": "Resource identity changed or missing"
+    },
+    {
+      "id": "ec4d76896f8e4fa18f1a363e3dff8545",
+      "profile": "ios",
+      "generation": 2,
+      "status": "active",
+      "reason": "declared-input-changed",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/ec4d76896f8e4fa18f1a363e3dff8545",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+      "presence": "present",
+      "logicalBytes": 134027778,
+      "fingerprint": "c18ee643bd060d3013553f8ffa8491bfceeabea8dec4fdaf6068bf56ef85963a",
+      "protected": []
+    },
+    {
+      "id": "fbac9710e2c74a5d993a02974eca45a3",
+      "profile": "default",
+      "generation": 2,
+      "status": "active",
+      "reason": "declared-input-changed",
+      "path": "/Users/kent/Library/Application Support/idutil/resources/fbac9710e2c74a5d993a02974eca45a3",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-135547/feature-b",
+      "presence": "present",
+      "logicalBytes": 204936738,
+      "fingerprint": "b9cef77d4c7150c96a6447d372ca3980ee941e6e69377ec06bf1c674bfdddf90",
+      "protected": []
+    }
+  ],
+  "sharedCaches": {},
+  "buildContext": null,
+  "configurationEvidence": "unknown",
+  "usageEvidence": "unknown"
+}

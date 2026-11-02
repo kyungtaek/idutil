@@ -1,0 +1,592 @@
+{
+  "contexts": {
+    "a": {
+      "artifactsPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/Artifacts",
+      "cacheConnections": {
+        "compilation": {
+          "id": "415ec85dd5ee78b74208aeb2",
+          "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2",
+          "toolchain": {
+            "developerDir": "/Applications/Xcode.app/Contents/Developer",
+            "hostArchitecture": "arm64",
+            "simulatorSDK": "24A430",
+            "version": "Xcode 27.0\nBuild version 27A266a"
+          }
+        },
+        "packageDownloads": "external-tool-owned; not garbage collected"
+      },
+      "cacheMode": "shared",
+      "clearMCPDefault": "projectPath",
+      "configurationEvidence": "unknown",
+      "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+      "environment": {
+        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+      },
+      "generation": 1,
+      "mcpSessionDefaults": {
+        "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+        "extraArgs": [
+          "-clonedSourcePackagesDirPath",
+          "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+          "COMPILATION_CACHE_ENABLE_CACHING=YES",
+          "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+          "CODE_SIGNING_ALLOWED=NO",
+          "ARCHS=arm64",
+          "CODE_SIGNING_ALLOWED=NO",
+          "ARCHS=arm64"
+        ],
+        "scheme": "MixedCacheProbe",
+        "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace"
+      },
+      "profile": "default",
+      "repositoryId": "3c9c877272833649c3bdafcc",
+      "resourceId": "a670310c90f745fa92deadfa5e3f68b3",
+      "schemaVersion": 1,
+      "sourcePackagesPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+      "usageEvidence": "unknown",
+      "worktreeId": "ddab759c6315afcc9ed715ba",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a",
+      "xcodebuildArgs": [
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+      ]
+    },
+    "b": {
+      "artifactsPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/Artifacts",
+      "cacheConnections": {
+        "compilation": {
+          "id": "415ec85dd5ee78b74208aeb2",
+          "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2",
+          "toolchain": {
+            "developerDir": "/Applications/Xcode.app/Contents/Developer",
+            "hostArchitecture": "arm64",
+            "simulatorSDK": "24A430",
+            "version": "Xcode 27.0\nBuild version 27A266a"
+          }
+        },
+        "packageDownloads": "external-tool-owned; not garbage collected"
+      },
+      "cacheMode": "shared",
+      "clearMCPDefault": "projectPath",
+      "configurationEvidence": "unknown",
+      "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+      "environment": {
+        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+      },
+      "generation": 1,
+      "mcpSessionDefaults": {
+        "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+        "extraArgs": [
+          "-clonedSourcePackagesDirPath",
+          "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+          "COMPILATION_CACHE_ENABLE_CACHING=YES",
+          "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+          "CODE_SIGNING_ALLOWED=NO",
+          "ARCHS=arm64"
+        ],
+        "scheme": "MixedCacheProbe",
+        "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace"
+      },
+      "profile": "default",
+      "repositoryId": "3c9c877272833649c3bdafcc",
+      "resourceId": "89f897334c2f408cbaa948a81248850f",
+      "schemaVersion": 1,
+      "sourcePackagesPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+      "usageEvidence": "unknown",
+      "worktreeId": "d603a39665fad4f6d5a0c5be",
+      "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b",
+      "xcodebuildArgs": [
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS"
+      ]
+    }
+  },
+  "lab": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033",
+  "limitations": [
+    "Real Claude/Codex host sessions are not executed by this script",
+    "No simulator devices are created; iOS runtime tests require an available simulator",
+    "XcodeBuildMCP 2.7.0 test_macos drops derivedDataPath; use existing xcodebuild test. MCP logs/results are externally owned.",
+    "simctl list devices available timed out after 12 seconds; no iOS runtime/XCTest executed"
+  ],
+  "logicalBytes": {
+    "buildContext": null,
+    "configurationEvidence": "unknown",
+    "observedAt": 1793593886.757898,
+    "resources": [
+      {
+        "fingerprint": "215201066add2de68eb9d1762c9bf758f96cfd99278c18513c2478458d5995a7",
+        "generation": 1,
+        "id": "31301b4b07214bfa89ac2e179727d6e8",
+        "logicalBytes": 113,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/31301b4b07214bfa89ac2e179727d6e8",
+        "presence": "present",
+        "profile": "ios",
+        "protected": [],
+        "reason": "prepare",
+        "status": "retired",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b"
+      },
+      {
+        "fingerprint": "e030a991eb2d0c4bd029e4e0039839fb42869c5023c6677b77a54cf46a7727a2",
+        "generation": 2,
+        "id": "80a71096e9614755a06a70becf77ae3b",
+        "logicalBytes": 126813464,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/80a71096e9614755a06a70becf77ae3b",
+        "presence": "present",
+        "profile": "ios",
+        "protected": [],
+        "reason": "declared-input-changed",
+        "status": "active",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b"
+      },
+      {
+        "fingerprint": "705aed7f530a8a3a62be3c1c24343c55a06a8c95c6157ad412c6cb3bae6afdaf",
+        "generation": 1,
+        "id": "880abda0045648e89d967390c52e9c2d",
+        "logicalBytes": 113,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/880abda0045648e89d967390c52e9c2d",
+        "presence": "present",
+        "profile": "ios",
+        "protected": [],
+        "reason": "prepare",
+        "status": "active",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a"
+      },
+      {
+        "fingerprint": "653ae6ab26c8a4727e87c84b8522219ff3c4eec2b122298c6d0f1a943a88c590",
+        "generation": 1,
+        "id": "89f897334c2f408cbaa948a81248850f",
+        "logicalBytes": 202284051,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f",
+        "presence": "present",
+        "profile": "default",
+        "protected": [],
+        "reason": "prepare",
+        "status": "retired",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b"
+      },
+      {
+        "fingerprint": "6d90d9a4bdcb36085bdab0b13c3262b6b148dabd3ce39f4cefa2138dfdc6fe08",
+        "generation": 1,
+        "id": "a670310c90f745fa92deadfa5e3f68b3",
+        "logicalBytes": 290247900,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3",
+        "presence": "present",
+        "profile": "default",
+        "protected": [
+          "DerivedData/Logs/Test/Test-MixedCacheProbe-2026.11.02_13-30-56-+0900.xcresult",
+          "DerivedData/Build/Products/Debug/MixedCacheProbe.dSYM",
+          "DerivedData/Build/Products/Debug/MixedCacheTests.xctest.dSYM"
+        ],
+        "reason": "prepare",
+        "status": "active",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a"
+      },
+      {
+        "fingerprint": "e04cf678e02269424c2f4cc915236438d08d71333e39d54d78554580d20520b8",
+        "generation": 2,
+        "id": "b03cb3b615ff46db87afba488c4c362e",
+        "logicalBytes": 205240008,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e",
+        "presence": "present",
+        "profile": "default",
+        "protected": [],
+        "reason": "injected-cache-error",
+        "status": "active",
+        "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b"
+      }
+    ],
+    "schemaVersion": 1,
+    "sharedCaches": {
+      "415ec85dd5ee78b74208aeb2": {
+        "fingerprint": "15394fcb1a5fa6fb94369a04a4ccf7403060843bb1f5f381ebe16ec1b7bcfa06",
+        "gc": "external-native-store; excluded",
+        "logicalBytes": 528803220,
+        "path": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2",
+        "protected": [],
+        "references": [
+          "31301b4b07214bfa89ac2e179727d6e8",
+          "80a71096e9614755a06a70becf77ae3b",
+          "880abda0045648e89d967390c52e9c2d",
+          "89f897334c2f408cbaa948a81248850f",
+          "a670310c90f745fa92deadfa5e3f68b3"
+        ]
+      }
+    },
+    "usageEvidence": "unknown"
+  },
+  "recoveredContext": {
+    "artifactsPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/Artifacts",
+    "cacheConnections": {
+      "compilation": null,
+      "packageDownloads": "external-tool-owned; not garbage collected"
+    },
+    "cacheMode": "private-only",
+    "clearMCPDefault": "projectPath",
+    "configurationEvidence": "unknown",
+    "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/DerivedData",
+    "environment": {
+      "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+    },
+    "generation": 2,
+    "mcpSessionDefaults": {
+      "derivedDataPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/DerivedData",
+      "extraArgs": [
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO"
+      ],
+      "scheme": "MixedCacheProbe",
+      "workspacePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace"
+    },
+    "profile": "default",
+    "repositoryId": "3c9c877272833649c3bdafcc",
+    "resourceId": "b03cb3b615ff46db87afba488c4c362e",
+    "schemaVersion": 1,
+    "sourcePackagesPath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/SourcePackages",
+    "usageEvidence": "unknown",
+    "worktreeId": "d603a39665fad4f6d5a0c5be",
+    "worktreePath": "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b",
+    "xcodebuildArgs": [
+      "-workspace",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+      "-scheme",
+      "MixedCacheProbe",
+      "-derivedDataPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/DerivedData",
+      "-clonedSourcePackagesDirPath",
+      "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/SourcePackages",
+      "COMPILATION_CACHE_ENABLE_CACHING=NO"
+    ]
+  },
+  "result": "passed-with-adapter-limitations",
+  "results": [
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.tools/worktrunk/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/seed",
+        "switch",
+        "--create",
+        "a",
+        "--base",
+        "main",
+        "--path",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a",
+        "--no-cd"
+      ],
+      "exitCode": 0,
+      "name": "wt-create-a",
+      "seconds": 1.1024244999999997
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.tools/worktrunk/wt",
+        "-C",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/seed",
+        "switch",
+        "--create",
+        "b",
+        "--base",
+        "main",
+        "--path",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b",
+        "--no-cd"
+      ],
+      "exitCode": 0,
+      "name": "wt-create-b",
+      "seconds": 0.3794221249999996
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "ARCHS=arm64",
+        "build"
+      ],
+      "exitCode": 0,
+      "name": "xcodebuild-a",
+      "seconds": 10.551903792
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "probe-a",
+      "seconds": 0.23729933299999928
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-configuration",
+        "Debug",
+        "-showBuildSettings",
+        "-json"
+      ],
+      "exitCode": 0,
+      "name": "settings-a",
+      "seconds": 0.7655711670000009
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "ARCHS=arm64",
+        "build"
+      ],
+      "exitCode": 0,
+      "name": "xcodebuild-b",
+      "seconds": 4.906316417000003
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "probe-b",
+      "seconds": 0.23821879199999785
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-configuration",
+        "Debug",
+        "-showBuildSettings",
+        "-json"
+      ],
+      "exitCode": 0,
+      "name": "settings-b",
+      "seconds": 0.7746096250000001
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-a/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "-configuration",
+        "Debug",
+        "test",
+        "CODE_SIGNING_ALLOWED=NO"
+      ],
+      "exitCode": 0,
+      "name": "xcodebuild-tests",
+      "seconds": 6.145999291999999
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheApp",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/80a71096e9614755a06a70becf77ae3b/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/80a71096e9614755a06a70becf77ae3b/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=YES",
+        "COMPILATION_CACHE_CAS_PATH=/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/shared/415ec85dd5ee78b74208aeb2/CAS",
+        "-destination",
+        "generic/platform=iOS Simulator",
+        "ARCHS=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "build"
+      ],
+      "exitCode": 0,
+      "name": "xcodebuild-ios-link",
+      "seconds": 5.836501999999999
+    },
+    {
+      "isError": false,
+      "name": "mcp-set-a",
+      "tool": "session_set_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-show-a",
+      "tool": "session_show_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-build-a",
+      "tool": "build_macos"
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "mcp-probe-a",
+      "seconds": 0.009492416999997033
+    },
+    {
+      "isError": false,
+      "name": "mcp-set-b",
+      "tool": "session_set_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-show-b",
+      "tool": "session_show_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-build-b",
+      "tool": "build_macos"
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/89f897334c2f408cbaa948a81248850f/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "mcp-probe-b",
+      "seconds": 0.009511207999999272
+    },
+    {
+      "isError": false,
+      "name": "mcp-set-a",
+      "tool": "session_set_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-show-a",
+      "tool": "session_show_defaults"
+    },
+    {
+      "isError": false,
+      "name": "mcp-build-a",
+      "tool": "build_macos"
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/a670310c90f745fa92deadfa5e3f68b3/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "mcp-probe-a",
+      "seconds": 0.008809542000001613
+    },
+    {
+      "isError": false,
+      "name": "mcp-test-a",
+      "tool": "test_macos"
+    },
+    {
+      "argv": [
+        "/usr/bin/xcodebuild",
+        "-workspace",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/worktree-b/MixedCache.xcworkspace",
+        "-scheme",
+        "MixedCacheProbe",
+        "-derivedDataPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/DerivedData",
+        "-clonedSourcePackagesDirPath",
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/SourcePackages",
+        "COMPILATION_CACHE_ENABLE_CACHING=NO",
+        "-destination",
+        "platform=macOS,arch=arm64",
+        "CODE_SIGNING_ALLOWED=NO",
+        "build"
+      ],
+      "exitCode": 0,
+      "name": "xcodebuild-recovered-b",
+      "seconds": 7.8393775839999975
+    },
+    {
+      "argv": [
+        "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-133033/managed/resources/b03cb3b615ff46db87afba488c4c362e/DerivedData/Build/Products/Debug/MixedCacheProbe"
+      ],
+      "exitCode": 0,
+      "name": "recovered-probe-b",
+      "seconds": 0.2630573749999954
+    },
+    {
+      "name": "xcodebuild-b-after-wt-remove-a",
+      "exitCode": 0,
+      "seconds": 2.984447416,
+      "probe": "remote-v1/local-v1/resource-v1/pod-v1/binary-1"
+    }
+  ],
+  "mcpTestIsolation": {
+    "passed": false,
+    "version": "2.7.0",
+    "failedStage": "test-without-building",
+    "missingArgument": "-derivedDataPath",
+    "observedDefaultPath": "/Users/kent/Library/Developer/Xcode/DerivedData/MixedCache-gioanahbxyccwcemgjoxhujoxzya",
+    "observedContents": "TestResults/metadata.db and Logs; no build products observed",
+    "method": "post-run source/log/filesystem inspection; not a pre-run filesystem snapshot"
+  }
+}

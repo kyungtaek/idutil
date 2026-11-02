@@ -1,0 +1,13 @@
+{
+  "pins" : [
+    {
+      "identity" : "remotefeature",
+      "kind" : "localSourceControl",
+      "location" : "/Users/kent/workspace/ios-disk-util/.lab/mixed-20261102-102746/RemoteFeature",
+      "state" : {
+        "revision" : "8d4fbff13aa459fc808634746eb293c5be7df2e1"
+      }
+    }
+  ],
+  "version" : 2
+}

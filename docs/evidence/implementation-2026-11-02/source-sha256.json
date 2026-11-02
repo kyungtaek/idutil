@@ -1,0 +1,9 @@
+{
+  "src/idutil/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+  "src/idutil/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+  "src/idutil/assets/ios-disk-util/SKILL.md": "3f103966e7dd04c04a2d5d0e168651fb61565ca327371c05aea7281ecd79e349",
+  "src/idutil/cli.py": "31ce2ba7ecbd2b76ecc2dc7af8a0d64078bcd76250c39a85a1bab6e12f4dbe0e",
+  "src/idutil/core.py": "d08412fd4ca17e537cef7ef46b1cd70be643d0d60be943e3f452ef2df674653e",
+  "src/idutil/integration.py": "e4af78971d2d4212f83538cb52958ad4b9d5df87c193a7940a3d89f9fa4bac64",
+  "src/idutil/storage.py": "e3bf7b352a3ff87c8c76d945db3fd195f7315b20397bbaf75dea2ca2243c219b"
+}

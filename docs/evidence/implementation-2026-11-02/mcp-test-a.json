@@ -1,0 +1,44 @@
+{
+  "content": [
+    {
+      "text": "\n\ud83e\uddea Test\n\n\u2705 1 test passed, 0 failed, 0 skipped (\u23f1\ufe0f 2.7s)\n  \u2514 Files:\n     \u2514\u2500\u2500 ~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/\n         \u251c\u2500\u2500 logs/test_macos_2026-11-02T04-31-15-279Z_pid58781_52867945.log \u2014 Build Logs\n         \u251c\u2500\u2500 result-bundles/test_macos_2026-11-02T04-31-15-279Z_pid58781_c425a54c.xcresult \u2014 Result Bundle\n         \u2514\u2500\u2500 test-products/test_macos_2026-11-02T04-31-15-279Z_pid58781_80afd67e.xctestproducts \u2014 Test Products\n",
+      "type": "text"
+    }
+  ],
+  "structuredContent": {
+    "data": {
+      "artifacts": {
+        "buildLogPath": "~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/logs/test_macos_2026-11-02T04-31-15-279Z_pid58781_52867945.log",
+        "testProductsPath": "~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/test-products/test_macos_2026-11-02T04-31-15-279Z_pid58781_80afd67e.xctestproducts",
+        "xcresultPath": "~/Library/Developer/XcodeBuildMCP/workspaces/worktree-a-0be6a258712c/result-bundles/test_macos_2026-11-02T04-31-15-279Z_pid58781_c425a54c.xcresult"
+      },
+      "diagnostics": {
+        "errors": [],
+        "testFailures": [],
+        "warnings": []
+      },
+      "summary": {
+        "counts": {
+          "failed": 0,
+          "passed": 1,
+          "skipped": 0
+        },
+        "durationMs": 2748,
+        "status": "SUCCEEDED",
+        "target": "macos"
+      },
+      "testCases": [
+        {
+          "durationMs": 1,
+          "status": "passed",
+          "suite": "CacheTests",
+          "test": "testValue"
+        }
+      ]
+    },
+    "didError": false,
+    "error": null,
+    "schema": "xcodebuildmcp.output.test-result",
+    "schemaVersion": "3"
+  }
+}
