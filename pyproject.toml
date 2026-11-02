@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ios-disk-util"
-version = "0.2.0"
+version = "0.2.1"
 description = "Worktrunk companion for isolated Xcode build data and conservative garbage collection"
 requires-python = ">=3.9"
 dependencies = ["tomlkit>=0.13,<1"]

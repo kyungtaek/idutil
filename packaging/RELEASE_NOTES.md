@@ -1,10 +1,10 @@
-Standalone macOS distribution of idutil, the Worktrunk companion for isolated DerivedData and conservative GC.
+idutil 0.2.1 adds an interactive remote installer for macOS.
 
-- Apple Silicon (arm64) and Intel (x86_64) executables with an embedded Python runtime. No Python or uv installation required.
-- Download installer with architecture selection, SHA-256 verification, executable version checking, and atomic replacement.
-- Durable Worktrunk hook runtime survives removal or replacement of the downloaded executable.
-- Worktree-specific DerivedData/SourcePackages, managed recovery, status/doctor, protected-artifact-aware GC, and Codex/Claude project rules.
-- Successful GC resources now show zero bytes instead of an incorrect missing-path diagnostic.
+- Select a release version and an absolute installation directory; Enter keeps the displayed defaults.
+- Confirm the download, view download progress, then confirm installation or replacement after integrity verification. Enter or no cancels.
+- Answer through the terminal when running `curl … | sh`.
+- Use `--yes` / `-y` for unattended installs; checksum, archive and version checks remain mandatory.
+- Existing executable files remain intact when verification fails or replacement is declined. Package-manager symlinks remain protected.
 
 Install on macOS 15 or later:
 

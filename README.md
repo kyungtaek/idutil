@@ -1,6 +1,6 @@
 # iOS Disk Util (`idutil`)
 
-Worktrunk와 함께 쓰는 **DerivedData 격리·캐시 연결·GC CLI**. 현재 버전은 **0.2.0**이며 [GitHub Releases](https://github.com/kyungtaek/idutil/releases/latest)에서 바이너리를 제공한다.
+Worktrunk와 함께 쓰는 **DerivedData 격리·캐시 연결·GC CLI**. 현재 버전은 **0.2.1**이며 [GitHub Releases](https://github.com/kyungtaek/idutil/releases/latest)에서 바이너리를 제공한다.
 
 Worktrunk가 워크트리를 관리하고, idutil은 작업별 빌드 데이터를 관리한다. 빌드·테스트·실행은 기존 Xcode 도구가 수행한다. Tuist는 필수가 아니다.
 
@@ -28,7 +28,7 @@ idutil doctor --integration
 idutil gc
 ```
 
-macOS 15 이상, Apple Silicon/Intel용 독립 실행 파일을 제공한다. Python이나 uv 설치는 필요 없다. 설치 스크립트는 아키텍처 선택과 SHA-256 검증 후 `~/.local/bin/idutil`에 설치한다. Worktrunk는 별도로 설치한다. 기존 uv 설치가 있으면 `uv tool uninstall ios-disk-util` 후 바이너리 설치로 전환한다.
+macOS 15 이상, Apple Silicon/Intel용 독립 실행 파일을 제공한다. Python이나 uv 설치는 필요 없다. 설치 스크립트는 버전·설치 경로 선택 → 다운로드 확인 → SHA-256 검증 → 설치·덮어쓰기 확인을 대화형으로 진행한 뒤 `~/.local/bin/idutil`에 설치한다. 자동화에서는 `sh "$installer" --yes`를 사용한다. Worktrunk는 별도로 설치한다. 기존 uv 설치가 있으면 `uv tool uninstall ios-disk-util` 후 바이너리 설치로 전환한다.
 
 `setup`은 실제 iOS Git 저장소 안에서 실행하고 project/scheme을 바꾼다. Worktrunk에는 최소 한 개의 커밋이 필요하다. 이미 등록한 저장소는 업데이트 후 `idutil setup --update`로 hook도 갱신한다.
 

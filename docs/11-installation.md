@@ -1,10 +1,10 @@
 # 설치 및 초기 설정
 
-idutil 0.2.0은 GitHub Releases의 macOS 실행 파일로 설치한다. Python·uv·소스 빌드가 필요 없다. Apple Silicon과 Intel을 지원하며 배포 기준은 macOS 15 이상이다.
+idutil 0.2.1은 GitHub Releases의 macOS 실행 파일로 설치한다. Python·uv·소스 빌드가 필요 없다. Apple Silicon과 Intel을 지원하며 배포 기준은 macOS 15 이상이다.
 
 ## 1. 바이너리 설치
 
-터미널에서 최신 릴리즈의 설치 스크립트를 다운로드해 실행한다.
+터미널에서 최신 릴리즈의 설치 스크립트를 다운로드해 실행한다. 기본은 대화형 설치다. 버전과 설치 디렉터리를 입력하고(Enter는 표시된 기본값), 다운로드와 최종 설치에 각각 `y`로 동의한다. 기존 실행 파일을 교체할 때도 확인한다. 확인 질문에서 Enter 또는 `n`을 입력하면 취소한다.
 
 ```sh
 installer="$(mktemp)"
@@ -23,13 +23,15 @@ export PATH="$HOME/.local/bin:$PATH"
 idutil --version
 ```
 
-특정 버전이나 다른 경로를 선택할 수 있다.
+`curl … | sh`처럼 스크립트가 표준 입력을 사용해도 질문은 `/dev/tty`로 받는다. 터미널이 없는 CI에서는 `sh "$installer" --yes`로 기본값을 승인해야 한다. `--yes`에서도 체크섬과 실행 파일 검증은 수행한다.
+
+특정 버전이나 다른 경로를 기본값으로 지정할 수 있다. 경로는 절대 경로를 입력한다. `--version`/`--bin-dir` 또는 `IDUTIL_VERSION`/`IDUTIL_BIN_DIR`를 지원한다.
 
 ```sh
 installer="$(mktemp)"
 curl --proto '=https' --tlsv1.2 -fsSL \
-  https://github.com/kyungtaek/idutil/releases/download/v0.2.0/install.sh \
-  -o "$installer" && sh "$installer" --version v0.2.0 --bin-dir "$HOME/.local/bin"
+  https://github.com/kyungtaek/idutil/releases/download/v0.2.1/install.sh \
+  -o "$installer" && sh "$installer" --version v0.2.1 --bin-dir "$HOME/.local/bin"
 rm -f "$installer"
 ```
 

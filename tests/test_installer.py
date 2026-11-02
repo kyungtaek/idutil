@@ -2,6 +2,7 @@
 import hashlib
 import io
 import os
+import pty
 from pathlib import Path
 import shutil
 import subprocess
@@ -54,7 +55,65 @@ class InstallerTests(unittest.TestCase):
         (self.assets / 'SHA256SUMS').write_text(hashlib.sha256(asset.read_bytes()).hexdigest() + '  ' + asset.name + '\n')
 
     def install(self, **env):
-        return subprocess.run(['/bin/sh', str(self.script)], env={**self.env, **env}, capture_output=True, text=True)
+        return subprocess.run(['/bin/sh', str(self.script), '--yes'], env={**self.env, **env}, capture_output=True, text=True)
+
+    def interactive_install(self, answers, piped=False):
+        master, slave = pty.openpty()
+        script = self.script
+        if piped:
+            # Supply a PTY device for /dev/tty without requiring a new login session.
+            script = self.root / 'piped-install.sh'
+            script.write_text(self.script.read_text().replace('/dev/tty', os.ttyname(slave)))
+        command = (['/bin/sh', '-c', 'cat "$1" | /bin/sh', 'installer', str(script)]
+                   if piped else ['/bin/sh', str(script)])
+        try:
+            process = subprocess.Popen(command, stdin=slave, stdout=subprocess.PIPE,
+                                       stderr=subprocess.PIPE, env=self.env,
+                                       text=True)
+            os.write(master, answers.encode())
+            try:
+                stdout, stderr = process.communicate(timeout=5)
+            except subprocess.TimeoutExpired as error:
+                process.kill()
+                process.wait()
+                process.stdout.close()
+                process.stderr.close()
+                raise AssertionError(f'Terminal timed out: {error.output!r} {error.stderr!r}') from error
+            return process.returncode, stdout + stderr
+        finally:
+            os.close(master)
+            os.close(slave)
+
+    def test_interactive_install_from_file_and_pipe(self):
+        for piped in (False, True):
+            with self.subTest(piped=piped):
+                code, output = self.interactive_install('\n\ny\ny\n', piped=piped)
+                self.assertEqual(code, 0, output)
+                self.assertIn('Release version', output)
+                self.assertIn('Verification passed', output)
+                self.assertTrue((self.target / 'idutil').exists())
+                (self.target / 'idutil').unlink()
+
+    def test_interactive_cancel_before_download(self):
+        code, output = self.interactive_install('\n\n\n')
+        self.assertEqual(code, 0, output)
+        self.assertNotIn('Resolving release', output)
+        self.assertFalse((self.target / 'idutil').exists())
+
+    def test_interactive_refuse_replacement(self):
+        original = self.target / 'idutil'
+        original.write_text('original')
+        code, output = self.interactive_install('\n\ny\nn\n')
+        self.assertEqual(code, 0, output)
+        self.assertIn('Replace existing', output)
+        self.assertEqual(original.read_text(), 'original')
+
+    def test_interactive_custom_directory(self):
+        destination = self.root / 'custom bin'
+        code, output = self.interactive_install('v0.2.0\n' + str(destination) + '\ny\ny\n')
+        self.assertEqual(code, 0, output)
+        self.assertTrue((destination / 'idutil').exists())
+        self.assertFalse((self.target / 'idutil').exists())
 
     def test_valid_archive_installs_and_updates(self):
         self.assertEqual(self.install().returncode, 0)
